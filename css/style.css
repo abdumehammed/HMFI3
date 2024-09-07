@@ -1,4 +1,12 @@
 
+ul li.white{
+    color:inherit;
+}
+ul li .white:hover{
+    color:var(--bs-light);
+}
+
+
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
