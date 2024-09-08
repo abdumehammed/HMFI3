@@ -97,7 +97,11 @@
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 <script type="text/javascript" src="engine1/jquery.js"></script>
 <!-- End WOWSlider.com HEAD section -->
-    </head>
+    
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
 
     <body>
 
@@ -158,17 +162,17 @@
         <!-- Navbar & Hero Start -->
 <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
     <div class="container">
-        <nav style="padding: 0px;" class="navbar navbar-expand-lg navbar-light">
+        <nav style="padding: 5px;" class="navbar navbar-expand-lg navbar-light">
             <!-- Logo and Institution Name aligned left -->
             <a href="#" class="d-flex align-items-center">
                 <img class="logo" src="img/logotrasparent.png" style="max-width:100px;" alt="Logo">
                 <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
-                Harar Microfinance <br> Institution S.C.
+                    Harar Microfinance <br> Institution S.C.
                 </h4>
             </a>
             
             <!-- Toggle button for mobile view -->
-            <button  style="padding: 1px; border: none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
 
@@ -205,27 +209,119 @@
         </nav>
     </div>
 </div>
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><a href="http://wowslider.net"><img src="data0/images/2.jpg" alt="jquery image carousel" title="2" id="wows0_0"/></a></li>
+		<li><img src="data0/images/1.jpg" alt="1" title="1" id="wows0_1"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="2"><span><img src="data0/tooltips/2.jpg" alt="2"/>1</span></a>
+		<a href="#" title="1"><span><img src="data0/tooltips/1.jpg" alt="1"/>2</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v9.0</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
 
-<div class="container-fluid ">
+        <!-- Navbar & Hero End -->       
+        <!-- Carousel Start -->
+<!--         <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item bg-primary">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4"></h4>
+                                    <h1 class="display-1 text-white mb-4">Loan that help you change your life</h1>
+                                    <p class="mb-5 fs-5">
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 animated fadeInRight">
+                                <div class="calrousel-img" style="object-fit: cover;">
+                                    <img src="img/loan.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item bg-primary">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                            <div class="col-lg-5 animated fadeInLeft">
+                                <div class="calrousel-img">
+                                    <img  src="img/digital.png" class=" text-primary img-fluid w-10" alt="">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-7 animated fadeInRight">
+                                <div class="text-sm-center text-md-end">
+                                    <h3 class="text-white text-uppercase fw-bold mb-4">Welcome To Harar Microfinance Institute S.c.</h3>
+                                    <h4 class=" text-white mb-4">Save regularly
+                                    <h4 class=" text-white mb-4">Loan when needed</h4>
+                                    <h4 class=" text-white mb-4"> Repay your loans on time</h4>
+                                    <h4 class=" text-white mb-4">Fight Poverty</h4>                           
+                                    <p class="mb-5 fs-5">
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div> -->
+        <!-- Carousel End -->
 
-         
-               <!-- Start WOWSlider.com BODY section -->
-<div id="wowslider-container1">
-    <div class="ws_images"><ul>
-            <li><a href="http://wowslider.net"><img src="data1/images/22.jpg" alt="css image gallery" title="2" id="wows1_0"/></a></li>
-            <li><img src="data1/images/bgbreadcrumb.jpg" alt="1" title="1" id="wows1_1"/></li>
-        </ul></div>
-        <div class="ws_bullets"><div>
-            <a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>1</span></a>
-            <a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>2</span></a>
-        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript slider</a> by WOWSlider.com v9.0</div>
-    <div class="ws_shadow"></div>
+
+<!-- Carousel Start -->
+ <!-- Carousel Start -->
+ <div class="carousel-container">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="img/HMFI cover page.jpg" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/digital.png" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/600x300?text=Partner+3" alt="Partner 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/600x300?text=Partner+4" alt="Partner 4">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/600x300?text=Partner+5" alt="Partner 5">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/600x300?text=Partner+6" alt="Partner 6">
+      </div>
+      <!-- Duplicate for continuous effect -->
+
     </div>
+  </div>
+  <!-- Carousel End -->
 
-<!-- Navbar & Hero End -->              
+<!-- Carousel End -->
+
+
+
+        
+        
         <!-- Feature Start -->
-        <div class="container-fluid feature bg-light py-1">
-            <div class="container py-1">
+        <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" ">
                     <h4 class="text-primary display-4 ">Why Us?</h4>
                     <h5 class="display-7 mb-4">Empowering Economic Growth Through Financial Services</h5>
@@ -692,56 +788,75 @@
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
                     <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0 flex-column flex-md-row">
-                            <div class="col-12 col-md-4">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
                                 </div>
                             </div>
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
-                                    <h4 class="text-dark mb-1">Mariam Ahmed</h4>
-                                    <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0"> Mariam Ahmed </h4>
+                                    <p class="mb-3">Small Business Owner</p>
+                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets. Their dedication to understanding my needs and providing tailored support has made all the difference. I’m grateful for their partnership and look forward to continuing our collaboration."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/team-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0"> Abdullah Ali </h4>
+                                    <p class="mb-3">Community Leader</p>
+                                    <p class="mb-0">"Harar Microfinance Institute has played a pivotal role in our community’s development. Their commitment to empowering local entrepreneurs and providing access to essential financial resources has not only uplifted many individuals but also strengthened our local economy. The team’s genuine concern for our success is evident in everything they do."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0 flex-column flex-md-row">
-                            <div class="col-12 col-md-4">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
                                 </div>
                             </div>
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
-                                    <h4 class="text-dark mb-1">Mariam Ahmed</h4>
-                                    <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0"> Selam Tesfaye </h4>
+                                    <p class="mb-3">Financial Advisor</p>
+                                    <p class="mb-0">"Joining Harar Microfinance Institute has been a rewarding experience both professionally and personally. The team’s unwavering support and innovative financial solutions have enabled us to achieve our goals and positively impact countless lives. The work environment is inspiring, and I am proud to be part of an organization that values integrity and excellence in its mission to combat poverty."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0 flex-column flex-md-row">
-                            <div class="col-12 col-md-4">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
                                 </div>
                             </div>
-                            <div class="col-12 col-md-8">
-                                <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
-                                    <h4 class="text-dark mb-1">Mariam Ahmed</h4>
-                                    <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0"> Obsa Shenkor </h4>
+                                    <p class="mb-3">Entrepreneur</p>
+                                    <p class="mb-0">"Harar Microfinance Institute has been instrumental in supporting my business growth. Their flexible loan options and expert financial advice have enabled me to make strategic investments and achieve my goals. The staff’s professionalism and genuine interest in my success have made working with them a pleasure. I am thankful for their continued support and guidance."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Repeat similar structure for other testimonials -->
                 </div>
-                
             </div>
         </div>
         <!-- Testimonial End -->
@@ -846,8 +961,6 @@
         <script src="js/main.js"></script>
         <script src="js/tab.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="engine1/wowslider.js"></script>
-        <script type="text/javascript" src="engine1/script.js"></script>
 
     </body>
 
