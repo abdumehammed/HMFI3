@@ -233,21 +233,10 @@
                         <aside class="col-md-3">
                             <ul class="list-group">
                                 <!-- Set the first item to 'active' by default -->
-                                <li class="list-group-item active" onclick="showContent('savings-account', this)">
-                                    Compulsory Saving
-                                </li>
-                                <li class="list-group-item" onclick="showContent('fixed-deposit', this)">
-                                    Voluntary Savings
-                                </li>
-                                <li class="list-group-item" onclick="showContent('recurring-deposit', this)">
-                                    Housing Loan
-                                </li>
-                                <li class="list-group-item" onclick="showContent('childrens-savings', this)">
-                                    School Fees Loan (SFL)
-                                </li>
-                                <li class="list-group-item" onclick="showContent('retirement-savings', this)">
-                                    Retirement Savings
-                                </li>
+                                <li class="list-group-item active" onclick="showContent('compulsory_saving', this)">Compulsory Saving</li>
+                                <li class="list-group-item" onclick="showContent('Voluntary_saving', this)">Voluntary Savings</li>
+                                <li class="list-group-item" onclick="showContent('Regular_saving', this)">Regular saving</li>
+                                <li class="list-group-item" onclick="showContent('institutional_saving', this)">Institutional savings (SFL)</li>
                             </ul>
                         </aside>
 
@@ -255,7 +244,7 @@
                         <main class="col-md-9">
                             <!-- Content for Savings Account -->
                             <!-- Set the first content section to 'show' by default -->
-                            <div id="savings-account" class="content-section show">
+                            <div id="compulsory_saving" class="content-section show">
                                 <div class="card mb-4 show">
                                     <div class="card-body">
                                         <h4>What are Compulsory Savings?</h4>
@@ -264,69 +253,65 @@
                                            
                                         </p>
                                         <h4>Key Features of Compulsory Savings:</h4>
-                                        <p> </p>
+                                        <p> Compulsory savings, also known as mandatory or forced savings, refers to a type of savings program where individuals are required to regularly deposit a fixed amount of money into a savings account. This type of saving is often linked to microfinance institutions, credit unions, or loan agreements, where saving is a condition for accessing other financial services, such as loans.
+
+                                            In the context of microfinance or cooperative models, compulsory savings can serve several purposes:
+                                             </p>
+                                             <p><strong>Loan Collateral: </strong>It may act as collateral or security for a loan.</p>
+                                             <p> <strong>Financial Discipline:</strong>  It encourages saving habits among clients.   </p>
+                                            <p><strong>Risk Mitigation: </strong>It helps mitigate the risk for the institution providing loans by ensuring that the client has a financial stake.
+                                                Typically, these savings cannot be withdrawn until certain conditions are met, such as loan repayment or the end of a specific contract.</p> 
                                     
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Content for Fixed Deposit -->
-                            <div id="fixed-deposit" class="content-section hidden">
-                                <h2>Fixed Deposit</h2>
+                            <div id="Voluntary_saving" class="content-section hidden">
+                              
                                 <div class="card mb-4">
                                     <div class="card-body">
-                                        <h3 class="card-title">Start a Fixed Deposit</h3>
+                                        <h4 class="card-title">What is Voluntary Saving?</h4>
                                         <p class="card-text">
-                                            HMFI offers Voluntary Savings, a flexible savings product tailored for both new and existing clients. This product allows clients to deposit and withdraw funds anytime during office hours, with no limitations. With a low opening balance of just 20 birr, clients benefit from an 8% annual interest rate, which is compounded every six months.
-
-
+                                            Voluntary saving is a saving product that its amount and frequency of saving determined by the client itself. An individual client, member of the group, can have voluntary saving. A member of a group can withdraw its voluntary saving any time even when the group has loan outstanding with Harar MFI.
+                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Content for Recurring Deposit -->
-                            <div id="recurring-deposit" class="content-section hidden">
-                                <h2>Recurring Deposit</h2>
+                            <div id="Regular_saving" class="content-section hidden">
+                              
                                 <div class="card mb-4">
                                     <div class="card-body">
-                                        <h3 class="card-title">Recurring Deposit Plan</h3>
+                                        <h4 class="card-title">What is Regular Saving?</h4>
                                         <p class="card-text">
-                                            Make regular deposits and earn great returns on your
-                                            savings.
+                                            Voluntary saving is a saving product that its amount and frequency of saving determined by the client itself. An individual client, member of the group, can have voluntary saving. A member of a group can withdraw its voluntary saving any time even when the group has loan outstanding with Harar MFI.
+                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Content for Children's Savings -->
-                            <div id="childrens-savings" class="content-section hidden">
-                                <h2>Children's Savings</h2>
+                            <div id="Regular_saving" class="content-section hidden">
+                              
                                 <div class="card mb-4">
                                     <div class="card-body">
-                                        <h3 class="card-title">Children's Savings Account</h3>
+                                        <h4 class="card-title">What is Regular Saving?</h4>
                                         <p class="card-text">
-                                            Secure your child’s future with a high-interest savings
-                                            account.
+                                            Voluntary saving is a saving product that its amount and frequency of saving determined by the client itself. An individual client, member of the group, can have voluntary saving. A member of a group can withdraw its voluntary saving any time even when the group has loan outstanding with Harar MFI.
+                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Content for Retirement Savings -->
-                            <div id="retirement-savings" class="content-section hidden">
-                                <h2>Retirement Savings</h2>
+                            <div id="institutional_saving" class="content-section hidden">
+                              
                                 <div class="card mb-4">
                                     <div class="card-body">
-                                        <h3 class="card-title">Retirement Savings Plan</h3>
+                                        <h4 class="card-title">What is Regular Saving?</h4>
                                         <p class="card-text">
-                                            Plan for a comfortable retirement with our specialized
-                                            savings plans.
+                                            Voluntary saving is a saving product that its amount and frequency of saving determined by the client itself. An individual client, member of the group, can have voluntary saving. A member of a group can withdraw its voluntary saving any time even when the group has loan outstanding with Harar MFI.
+                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
                                     </div>
                                 </div>
                             </div>
