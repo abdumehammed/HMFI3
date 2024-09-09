@@ -31,124 +31,129 @@
     <link href="css/style.css" rel="stylesheet">
     <!--tab icon  -->
     <link rel="icon" type="image/png" href="img/logo.png" />
-
+ <!-- Start WOWSlider.com HEAD section -->
+ <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+ <script type="text/javascript" src="engine1/jquery.js"></script>
+ <!-- End WOWSlider.com HEAD section -->
 </head>
+<body>
+ <div class="snowflakes-container"></div>
+ <script>
+     const snowflakeContainer = document.querySelector('.snowflakes-container');
+     const snowflakeImageSrc = 'img/Adey.png'; // Adjust path as needed
+     const numberOfSnowflakes = 20;
 
-    <body >
-        <div class="container-fluid">
-            
-        </div>
-        <div id="snowflakes">
-        </div>
+     for (let i = 0; i < numberOfSnowflakes; i++) {
+         const snowflake = document.createElement('img');
+         snowflake.src = snowflakeImageSrc;
+         snowflake.classList.add('snowflake');
+         snowflake.style.left = Math.random() * window.innerWidth + 'px';
+         snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+         snowflake.style.animationDelay = Math.random() * 5 + 's';
+         snowflakeContainer.appendChild(snowflake);
+     }
+ </script>
+ <!-- Spinner Start -->
+ <div id="spinner"
+     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+     <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+         <span class="sr-only">Loading...</span>
+     </div>
+ </div>
+ <!-- Spinner End -->
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
+ <!-- Topbar Start -->
 
-        <!-- Topbar Start -->
-        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-            <div class="container">
-                <div class="row gx-0 align-items-center">
-                    <div class="col-lg-8 text-center text-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            <div class="border-end border-primary pe-3">
-                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
-                            </div>
-                            <div class="ps-3">
-                                <a href="tel:+251256663745" class="text-muted small"><i class="fas  fa-fax text-primary me-2"></i>+251-256-663745</a>
-                            </div>
-                            <div class="ps-3">
-                                <a href="mailto:example@gmail.com" class="text-muted small"><i class=" fas fa-phone-alt text-primary me-2"></i>025 666 3745 ,025 666 4078</a>
-                            </div>
-                                    <div class="ps-3">
-                                <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex justify-content-end">
-                            <div class="d-flex border-end border-primary pe-3">
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="dropdown ms-3">
-                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">English</a>
-                                    <a href="#" class="dropdown-item">አማርኛ</a>
-                                    <a href="#" class="dropdown-item">Afaan Oromo</a>
-                                    <a href="#" class="dropdown-item">ሐረሪ ሲናን</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
+ <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+     <div class="container">
+         <div class="row gx-0 align-items-center">
+             <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                 <div class="d-flex flex-wrap">
+                     <div class="border-end border-primary pe-3">
+                         <a href="#" class="text-muted small"><i
+                                 class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
+                     </div>
+                     <div class="ps-3">
+                         <a href="tel:+251256663745" class="text-muted small"><i
+                                 class="fas fa-fax text-primary me-2"></i>+251-256-663745</a>
+                     </div>
+                     <div class="ps-3">
+                         <a href="mailto:example@gmail.com" class="text-muted small"><i
+                                 class="fas fa-phone-alt text-primary me-2"></i>025 666
+                             3745 ,025 666 4078</a>
+                     </div>
+                     <div class="ps-3">
+                         <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
+                                 class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 text-center text-lg-end">
+                 <div class="d-flex justify-content-end">
+                     <div class="d-flex border-end border-primary pe-3">
+                         <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                         <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                         <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                     <div class="dropdown ms-3">
+                         <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
+                                     class="fas fa-globe-europe text-primary me-2"></i>
+                                 English</small></a>
+                         <div class="dropdown-menu rounded">
+                             <a href="#" class="dropdown-item">English</a>
+                             <a href="#" class="dropdown-item">አማርኛ</a>
+                             <a href="#" class="dropdown-item">Afaan Oromo</a>
+                             <a href="#" class="dropdown-item">ሐረሪ ሲናን</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Topbar End -->
 
+ <!-- Navbar & Hero Start -->
+ <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
+     <div class="container">
+         <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
+             <!-- Logo and Institution Name aligned left -->
+             <a href="#" class="d-flex align-items-center">
+                 <img class="logo" src="img/logotrasparent.png" style="max-width: 100px" alt="Logo" />
+                 <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
+                     Harar Microfinance <br />
+                     Institution S.C.
+                 </h4>
+             </a>
 
+             <!-- Toggle button for mobile view -->
+             <button style="padding: 1px; border: none" class="navbar-toggler" type="button"
+                 data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                 <span class="fa fa-bars"></span>
+             </button>
 
+             <!-- Navbar Links aligned to the right -->
+             <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
+                 <div class="navbar-nav ms-auto">
+                     <a href="index.html" class="nav-item nav-link ">Home</a>
+                     <a href="about.html" class="nav-item nav-link active">About</a>
+                     <div class="nav-item dropdown">
+                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products &
+                             Services</a>
+                         <div class="dropdown-menu">
+                             <a href="saving.html" class="dropdown-item">Saving Products</a>
+                             <a href="loan.html" class="dropdown-item">Loan Products</a>
+                         </div>
+                     </div>
+                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                     <a href="media.html" class="nav-item nav-link">Media</a>
+                 </div>
+             </div>
+         </nav>
+     </div>
+ </div>
 
-        
-        <!-- Navbar & Hero Start -->
-
-        <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
-            <div class="container">
-                <nav style="padding: 0px;" class="navbar navbar-expand-lg navbar-light">
-                    <!-- Logo and Institution Name aligned left -->
-                    <a href="#" class="d-flex align-items-center">
-                        <img class="logo" src="img/logotrasparent.png" style="max-width:100px;" alt="Logo">
-                        <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
-                        Harar Microfinance <br> Institution S.C.
-                        </h4>
-                    </a>
-                    
-                    <!-- Toggle button for mobile view -->
-                    <button  style="padding: 1px; border: none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-        
-                    <!-- Navbar Links aligned to the right -->
-                    <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link ">Home</a>
-                            <a href="about.html" class="nav-item nav-link active">About</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products & Services</a>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Saving Products</a>
-                                    <a href="#" class="dropdown-item">Loan Products</a>
-                                </div>
-                            </div>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="#" class="nav-item nav-link">Blog</a>
-                            
-                            <!-- Dropdown Menu for Pages -->
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Our Features</a>
-                                    <a href="#" class="dropdown-item">Our Team</a>
-                                    <a href="#" class="dropdown-item">Testimonial</a>
-                                    <a href="#" class="dropdown-item">FAQs</a>
-                                    <a href="#" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-        
-                            <a href="#" class="nav-item nav-link">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
         
         <!-- Navbar & Hero End -->
 
