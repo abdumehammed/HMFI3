@@ -1,29 +1,28 @@
-
-
-#snowflakes {
-  position: absolute;
+.snowflakes-container {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Snowflakes will not block user interactions with other elements */
+  z-index: 9999; /* Ensure it appears above other elements */
 }
 
 .snowflake {
   position: absolute;
-  width: 30px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  background-image: url('/img/adeyabeba\ .png'); /* Replace with your image path */
-  background-size: cover;
-  opacity: 0.9;
+  top: -100px;
+  width: 50px; /* Adjust the size of the snowflakes */
   animation: fall linear infinite;
+  opacity: 0.8;
 }
 
 @keyframes fall {
-  from {
+  0% {
     transform: translateY(-100px);
+    opacity: 1;
   }
-  to {
+  100% {
     transform: translateY(100vh);
+    opacity: 0;
   }
 }
