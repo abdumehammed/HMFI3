@@ -1,9 +1,9 @@
 const snowflakeContainer = document.querySelector('.snowflakes-container');
-const snowflakeImageSrc = '/img/adeyabeba .png'; // Path to your snowflake image
+const snowflakeImageSrc = '/img/Adey.png'; // Path to your snowflake image
 const numberOfSnowflakes = 20; // Number of snowflakes to repeat
 
 for (let i = 0; i < numberOfSnowflakes; i++) {
-  // Create a new image element
+  // Create a new image elementgit
   const snowflake = document.createElement('img');
   snowflake.src = snowflakeImageSrc;
   snowflake.classList.add('snowflake');
