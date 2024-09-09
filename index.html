@@ -113,8 +113,22 @@
     <!-- End WOWSlider.com HEAD section -->
 </head>
 <body>
-
     <div class="snowflakes-container"></div>
+    <script>
+        const snowflakeContainer = document.querySelector('.snowflakes-container');
+        const snowflakeImageSrc = 'img/Adey.png'; // Adjust path as needed
+        const numberOfSnowflakes = 20;
+
+        for (let i = 0; i < numberOfSnowflakes; i++) {
+            const snowflake = document.createElement('img');
+            snowflake.src = snowflakeImageSrc;
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.animationDelay = Math.random() * 5 + 's';
+            snowflakeContainer.appendChild(snowflake);
+        }
+    </script>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
