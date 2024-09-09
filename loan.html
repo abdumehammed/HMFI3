@@ -36,40 +36,76 @@
 
     </style> -->
     <style>
-        /* Style for active and hover states */
-        .list-group-item:hover,
-        .list-group-item.active {
+        /* Main container styling */
+        .tab-container {
+            margin: 20px;
+        }
+
+        /* Flexbox row layout for larger screens */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Tab styling */
+        .tabs {
+            list-style: none;
+            padding: 0;
             cursor: pointer;
         }
 
-        /* Hidden by default */
-        .hidden {
+        .tab {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+      
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        /* Active tab styling */
+        .tab.active {
+            background-color: white;
+            border-left: 5px solid #DE6726;
+            border-radius: 1px;
+            
+        }
+
+        /* Content container */
+        .tab-content-container {
+            
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Hide non-active tab content */
+        .tab-content {
             display: none;
         }
 
-        /* Animation for expanding content */
-        .content-section {
-            opacity: 0;
-            max-height: auto;
-            overflow: hidden;
-            transition: max-height 0.5s ease, opacity 0.5s ease;
+        /* Show active tab content */
+        .tab-content.active {
+            display: block;
         }
 
-        /* Expanded state */
-        .content-section.show {
-            opacity: 1;
-            max-height: 500px;
-            /* Adjust based on the content */
-        }
+        /* Media query for mobile view */
+        @media (max-width: 768px) {
 
-        /* Adjusting padding for expanding effect */
-        .card {
-            transform: scale(0);
-            transition: transform 0.3s ease;
-        }
+            /* Make the row stack vertically */
+            .row {
+                flex-direction: column;
+            }
 
-        .card.show {
-            transform: scale(1);
+            /* Ensure tabs stack vertically on mobile */
+            .tabs {
+                display: block;
+                width: 100%;
+            }
+
+            .tab {
+                margin-right: 0;
+                margin-bottom: 5px;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -222,149 +258,70 @@
                 Saving Products
             </h4>
         </div>
+        
     </div>
+<div class="container">
+    <div class="tab-container"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="tabs">
+                    <li class="tab active" onclick="showTabContent('tab1')">MSME Loan</li>
+                    <li class="tab" onclick="showTabContent('tab2')">Group Loan</li>
+                    <li class="tab" onclick="showTabContent('tab3')">Individual Loan</li>
+                    <li class="tab" onclick="showTabContent('tab1')">MSME Loan</li>
+                    <li class="tab" onclick="showTabContent('tab2')">Group Loan</li>
+                    <li class="tab" onclick="showTabContent('tab3')">Individual Loan</li>
+                </ul>
+            </div>
 
-    <div class="container">
-        <div class="my-4">
-            <div class="container mt-5">
-                <div class="container mt-5">
-                    <div class="row">
-                        <!-- Left Sidebar -->
-                        <aside class="col-md-3">
-                            <ul class="list-group">
-                                <!-- Set the first item to 'active' by default -->
-                                <li class="list-group-item active" onclick="showContent('savings-account', this)">
-                                    Compulsory Saving
-                                </li>
-                                <li class="list-group-item" onclick="showContent('fixed-deposit', this)">
-                                    Voluntary Savings
-                                </li>
-                                <li class="list-group-item" onclick="showContent('recurring-deposit', this)">
-                                    Housing Loan
-                                </li>
-                                <li class="list-group-item" onclick="showContent('childrens-savings', this)">
-                                    School Fees Loan (SFL)
-                                </li>
-                                <li class="list-group-item" onclick="showContent('retirement-savings', this)">
-                                    Retirement Savings
-                                </li>
-                            </ul>
-                        </aside>
-
-                        <!-- Main Content Area -->
-                        <main class="col-md-9">
-                            <!-- Content for Savings Account -->
-                            <!-- Set the first content section to 'show' by default -->
-                            <div id="savings-account" class="content-section show">
-                                <div class="card mb-4 show">
-                                    <div class="card-body">
-                                        <h4>What are Compulsory Savings?</h4>
-                                        <p>
-                                            means mandatory deposits made for the purpose of enabling the individuals, groups or businesses making the saving to qualify to receive loans from an authorized institution and serve as collateral against the loans so obtained
-                                           
-                                        </p>
-                                        <h4>Key Features of Compulsory Savings:</h4>
-                                        <p> </p>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Content for Fixed Deposit -->
-                            <div id="fixed-deposit" class="content-section hidden">
-                                <h2>Fixed Deposit</h2>
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Start a Fixed Deposit</h3>
-                                        <p class="card-text">
-                                            HMFI offers Voluntary Savings, a flexible savings product tailored for both new and existing clients. This product allows clients to deposit and withdraw funds anytime during office hours, with no limitations. With a low opening balance of just 20 birr, clients benefit from an 8% annual interest rate, which is compounded every six months.
-
-
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Content for Recurring Deposit -->
-                            <div id="recurring-deposit" class="content-section hidden">
-                                <h2>Recurring Deposit</h2>
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Recurring Deposit Plan</h3>
-                                        <p class="card-text">
-                                            Make regular deposits and earn great returns on your
-                                            savings.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Content for Children's Savings -->
-                            <div id="childrens-savings" class="content-section hidden">
-                                <h2>Children's Savings</h2>
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Children's Savings Account</h3>
-                                        <p class="card-text">
-                                            Secure your child’s future with a high-interest savings
-                                            account.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Content for Retirement Savings -->
-                            <div id="retirement-savings" class="content-section hidden">
-                                <h2>Retirement Savings</h2>
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Retirement Savings Plan</h3>
-                                        <p class="card-text">
-                                            Plan for a comfortable retirement with our specialized
-                                            savings plans.
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </main>
+            <div class="col-md-9">
+                <div class="tab-content-container">
+                    <div id="tab1" class="tab-content active">
+                        <h3>MSME Loan</h3>
+                        <p>Details about MSME Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit harum, saepe nostrum molestiae aperiam doloremque consequuntur nisi rem atque, quam sit id ut vel eum consequatur in voluptas, quidem tenetur?
+                        In eum consectetur perspiciatis suscipit, possimus dolores veniam dolor sunt voluptatem quis, enim voluptates, fuga ex quaerat! Natus, dolore. Quaerat libero necessitatibus accusantium obcaecati voluptas et nemo, ipsum excepturi magnam!
+                        Quibusdam similique ratione cumque. Magnam, suscipit quidem. Provident veritatis explicabo quae sit delectus repellendus dicta facilis, suscipit consequuntur dolores saepe perferendis a libero id cupiditate ipsa doloribus blanditiis maxime tempora.
+                        Tenetur quaerat provident eaque eos, mollitia vel sapiente dolor et accusantium dolore ducimus enim aut molestias aspernatur quasi qui vitae totam architecto reiciendis praesentium amet quam? Aliquid beatae rem maxime?
+                        Rem dicm impedit? Magni ex consequatur odio veniam modi quibusdam fugiat, vitae at sed. Nihil!
+                        Eos repudiandae facere distinctio fuga accusantium iure id doloremque vel ea vitae, necessitatibus nesciunt et numquam temporibus animi qui dolores dolore modi labore ducimus repellendus reprehenderit. Esse enim numquam ipsum.
+                        Ex maiores obcaecati nemo vero fuga, consectetur soluta? Sunt a culpa praesentium quaerat. Dicta consectetur fugit aliquid alias, neque, facilis error obcaecati officia molestias excepturi et officiis praesentium ipsum? Dolores?
+                       
+                        Sunt odio quia, eum doem. Perspiciatis quidem modi cupiditate?
+                        Quidem velit natus, facere ipsa odit neque deserunt consequatur? Quis voluptatum numquam vel officiis, deleniti nam dolorum harum dolore, consectetur ea cupiditate dignissimos voluptatibus facilis inventore suscipit maxime in accusamus....</p>
+                    </div>
+                    <div id="tab2" class="tab-content">
+                        <h3>Group Loan</h3>
+                        <p>Details about Group Loan...</p>
+                    </div>
+                    <div id="tab3" class="tab-content">
+                        <h3>Individual Loan</h3>
+                        <p>Details about Individual Loan...</p>
                     </div>
                 </div>
             </div>
-
-            <script>
-                function showContent(contentId, element) {
-                    // Remove active state from all list items
-                    const listItems = document.querySelectorAll(".list-group-item");
-                    listItems.forEach((item) => item.classList.remove("active"));
-
-                    // Add active state to the clicked item
-                    element.classList.add("active");
-
-                    // Hide all content sections
-                    const sections = document.querySelectorAll(".content-section");
-                    sections.forEach((section) => {
-                        section.classList.remove("show");
-                        section.classList.add("hidden");
-                    });
-
-                    // Show the selected content section
-                    const selectedSection = document.getElementById(contentId);
-                    selectedSection.classList.remove("hidden");
-                    selectedSection.classList.add("show");
-
-                    // Animate the card inside the section
-                    const card = selectedSection.querySelector(".card");
-                    card.classList.add("show");
-                }
-            </script>
-
-            <div class="tab-content" id="tab2"></div>
         </div>
     </div>
+</div>
+    
+
+    <script>
+        function showTabContent(tabId) {
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll(".tab");
+            tabs.forEach((tab) => tab.classList.remove("active"));
+
+            // Add active class to the clicked tab
+            event.target.classList.add("active");
+
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach((content) => content.classList.remove("active"));
+
+            // Show the clicked tab's content
+            const activeTabContent = document.getElementById(tabId);
+            activeTabContent.classList.add("active");
+        }
+    </script>
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">

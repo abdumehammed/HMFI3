@@ -1,247 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Harar Microfinance Institute S.C.</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8" />
+    <title>Harar Microfinance Institute S.C.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet" />
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
- 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="scss/bootstrap.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="scss/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/snowflake.css" />
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <!--tab icon  -->
-        <link rel="icon" type="image/png" href="img/logo.png" />
-        <style>
-            .text-justify{
-                text-align: justify;
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!--tab icon  -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
 
+        .header-carousel {
+            position: relative;
+            height: 500px;
+            /* Adjust as needed */
+            overflow: hidden;
+        }
+
+        .header-carousel-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 10;
+            color: white;
+        }
+
+        .carousel-img img {
+            height: 100%;
+            object-fit: cover;
+            /* Ensures images cover the container */
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 1000px;
+            /* Adjust height as needed */
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 200%;
+            /* Adjust based on the number of images */
+            animation: scroll 15s linear infinite;
+        }
+
+        .carousel-item {
+            flex: 1 0 20%;
+            /* Adjust based on the number of items visible at once */
+            width: 20%;
+            /* Adjust based on the number of items visible at once */
+            height: 100%;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
             }
-            
-    .header-carousel {
-        position: relative;
-        height: 400px; /* Adjust as needed */
-        overflow: hidden;
-    }
 
-    .header-carousel-item {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+            100% {
+                transform: translateX(-50%);
+            }
 
-    .carousel-caption {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        z-index: 10;
-        color: white;
-    }
+            /* Adjust based on the width */
+        }
 
-    .carousel-img img {
-        height: 100%;
-        object-fit: cover; /* Ensures images cover the container */
-    }
-    .carousel-container {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 300px; /* Adjust height as needed */
-    }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+</head>
 
-    .carousel-inner {
-      display: flex;
-      width: 200%; /* Adjust based on the number of images */
-      animation: scroll 15s linear infinite;
-    }
 
-    .carousel-item {
-      flex: 1 0 20%; /* Adjust based on the number of items visible at once */
-      width: 20%; /* Adjust based on the number of items visible at once */
-      height: 100%;
-    }
+<body>
+    <div id="snowflakes"></div>
 
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); } /* Adjust based on the width */
-    }
-
-    .carousel-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-        </style>
-        <!-- Start WOWSlider.com HEAD section -->
-<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-<script type="text/javascript" src="engine1/jquery.js"></script>
-<!-- End WOWSlider.com HEAD section -->
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center ">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Topbar Start -->
+    <!-- Topbar Start -->
 
-        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-            <div class="container">
-                <div class="row gx-0 align-items-center">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            <div class="border-end border-primary pe-3">
-                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
-                            </div>
-                            <div class="ps-3">
-                                <a href="tel:+251256663745" class="text-muted small"><i class="fas  fa-fax text-primary me-2"></i>+251-256-663745</a>
-                            </div>
-                            <div class="ps-3">
-                                <a href="mailto:example@gmail.com" class="text-muted small"><i class=" fas fa-phone-alt text-primary me-2"></i>025 666 3745 ,025 666 4078</a>
-                            </div>
-                                    <div class="ps-3">
-                                <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
-                            </div>
-                            
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="border-end border-primary pe-3">
+                            <a href="#" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="tel:+251256663745" class="text-muted small"><i
+                                    class="fas fa-fax text-primary me-2"></i>+251-256-663745</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:example@gmail.com" class="text-muted small"><i
+                                    class="fas fa-phone-alt text-primary me-2"></i>025 666
+                                3745 ,025 666 4078</a>
+                        </div>
+                        <div class="ps-3">
+                            <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex justify-content-end">
-                            <div class="d-flex border-end border-primary pe-3">
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="dropdown ms-3">
-                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">English</a>
-                                    <a href="#" class="dropdown-item">አማርኛ</a>
-                                    <a href="#" class="dropdown-item">Afaan Oromo</a>
-                                    <a href="#" class="dropdown-item">ሐረሪ ሲናን</a>
-                                </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex border-end border-primary pe-3">
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="dropdown ms-3">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
+                                        class="fas fa-globe-europe text-primary me-2"></i>
+                                    English</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item">English</a>
+                                <a href="#" class="dropdown-item">አማርኛ</a>
+                                <a href="#" class="dropdown-item">Afaan Oromo</a>
+                                <a href="#" class="dropdown-item">ሐረሪ ሲናን</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Topbar End -->
+    </div>
+    <!-- Topbar End -->
 
-        <!-- Navbar & Hero Start -->
-<div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
-    <div class="container">
-        <nav style="padding: 0px;" class="navbar navbar-expand-lg navbar-light">
-            <!-- Logo and Institution Name aligned left -->
-            <a href="#" class="d-flex align-items-center">
-                <img class="logo" src="img/logotrasparent.png" style="max-width:100px;" alt="Logo">
-                <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
-                Harar Microfinance <br> Institution S.C.
-                </h4>
-            </a>
-            
-            <!-- Toggle button for mobile view -->
-            <button  style="padding: 1px; border: none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
+        <div class="container">
+            <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
+                <!-- Logo and Institution Name aligned left -->
+                <a href="#" class="d-flex align-items-center">
+                    <img class="logo" src="img/logotrasparent.png" style="max-width: 100px" alt="Logo" />
+                    <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
+                        Harar Microfinance <br />
+                        Institution S.C.
+                    </h4>
+                </a>
 
-            <!-- Navbar Links aligned to the right -->
-            <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products & Services</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Saving Products</a>
-                            <a href="#" class="dropdown-item">Loan Products</a>
+                <!-- Toggle button for mobile view -->
+                <button style="padding: 1px; border: none" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <!-- Navbar Links aligned to the right -->
+                <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products &
+                                Services</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Saving Products</a>
+                                <a href="#" class="dropdown-item">Loan Products</a>
+                            </div>
                         </div>
-                    </div>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="#" class="nav-item nav-link">Blog</a>
-                    
-                    <!-- Dropdown Menu for Pages -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Our Features</a>
-                            <a href="#" class="dropdown-item">Our Team</a>
-                            <a href="#" class="dropdown-item">Testimonial</a>
-                            <a href="#" class="dropdown-item">FAQs</a>
-                            <a href="#" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="#" class="nav-item nav-link">Blog</a>
 
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                        <!-- Dropdown Menu for Pages -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Our Features</a>
+                                <a href="#" class="dropdown-item">Our Team</a>
+                                <a href="#" class="dropdown-item">Testimonial</a>
+                                <a href="#" class="dropdown-item">FAQs</a>
+                                <a href="#" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav-item nav-link">Contact</a>
+                    </div>
                 </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="">
+        <!-- Start WOWSlider.com BODY section -->
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <img src="data1/images/22.jpg" alt="css image gallery" title="Welcome" id="" />
+                    </li>
+                    <li>
+                        <img src="data1/images/11.jpg" alt="1" title="Welcome" id="wows1_1" />
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
-</div>
 
-<div class="container-fluid ">
+            <div class="ws_shadow"></div>
+        </div>
 
-         
-               <!-- Start WOWSlider.com BODY section -->
-<div id="wowslider-container1">
-    <div class="ws_images"><ul>
-            <li><a href="http://wowslider.net"><img src="data1/images/22.jpg" alt="css image gallery" title="2" id="wows1_0"/></a></li>
-            <li><img src="data1/images/bgbreadcrumb.jpg" alt="1" title="1" id="wows1_1"/></li>
-        </ul></div>
-        <div class="ws_bullets"><div>
-            <a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>1</span></a>
-            <a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>2</span></a>
-        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript slider</a> by WOWSlider.com v9.0</div>
-    <div class="ws_shadow"></div>
-    </div>
-
-<!-- Navbar & Hero End -->              
+        <!-- Navbar & Hero End -->
         <!-- Feature Start -->
         <div class="container-fluid feature bg-light py-1">
             <div class="container py-1">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" ">
-                    <h4 class="text-primary display-4 ">Why Us?</h4>
-                    <h5 class="display-7 mb-4">Empowering Economic Growth Through Financial Services</h5>
-                    <p class="mb-0 text-justify">we are committed to fostering economic growth and sustainability. Our mission is to empower individuals in both rural and urban areas of Ethiopia by providing them with essential financial services. By focusing on the productive poor, we enable our clients to achieve economic independence and build a secure future for themselves and their communities.
-
+          <h4 class=" text-primary display-4">Why Us?</h4>
+                    <h5 class="display-7 mb-4">
+                        Empowering Economic Growth Through Financial Services
+                    </h5>
+                    <p class="mb-0 text-justify">
+                        we are committed to fostering economic growth and sustainability.
+                        Our mission is to empower individuals in both rural and urban areas
+                        of Ethiopia by providing them with essential financial services. By
+                        focusing on the productive poor, we enable our clients to achieve
+                        economic independence and build a secure future for themselves and
+                        their communities.
                     </p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4 ">
+                            <div class="feature-icon p-4 mb-4">
                                 <i class="far fa-handshake fa-3x"></i>
                             </div>
                             <h4 class="mb-4">Trusted Company</h4>
-                            <p class="mb-4 text-justify ">Harar MFI fosters financial empowerment across Harari Regional state with reliable services tailored to the productive poor. We help clients achieve economic self-sustainability and build a secure, prosperous future.
-                                
+                            <p class="mb-4 text-justify">
+                                Harar MFI fosters financial empowerment across Harari Regional
+                                state with reliable services tailored to the productive poor. We
+                                help clients achieve economic self-sustainability and build a
+                                secure, prosperous future.
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -252,7 +289,11 @@
                                 <i class="fa fas fa-tasks fa-3x"></i>
                             </div>
                             <h4 class="mb-1">Operational Excellence</h4>
-                            <p class=" text-justify mb-4">we deliver financial solutions with speed and ease. Our streamlined processes ensure that you receive prompt, hassle-free service tailored to your needs, making your financial management straightforward and accessible.
+                            <p class="text-justify mb-4">
+                                we deliver financial solutions with speed and ease. Our
+                                streamlined processes ensure that you receive prompt,
+                                hassle-free service tailored to your needs, making your
+                                financial management straightforward and accessible.
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -263,7 +304,11 @@
                                 <i class="fa fa-bullseye fa-3x"></i>
                             </div>
                             <h4 class="mb-4">Flexible Plans</h4>
-                            <p class="mb-4 text-justify ">We offer diversified financial plans tailored to the diverse needs of our customers. As a trusted institution, and we are committed to helping clients achieve self-sustainability with solutions that adapt to their unique circumstances.
+                            <p class="mb-4 text-justify">
+                                We offer diversified financial plans tailored to the diverse
+                                needs of our customers. As a trusted institution, and we are
+                                committed to helping clients achieve self-sustainability with
+                                solutions that adapt to their unique circumstances.
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -271,13 +316,18 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-laptop-code  fa-3x"></i>
+                                <i class="fa fa-laptop-code fa-3x"></i>
                             </div>
-                            <div style="float: right;" class="feature-icon p-4 mb-4">
-                                <i class="fa fa-mobile  fa-3x"></i>
+                            <div style="float: right" class="feature-icon p-4 mb-4">
+                                <i class="fa fa-mobile fa-3x"></i>
                             </div>
                             <h4 class="mb-4">Modern Technology</h4>
-                            <p class="mb-4">we utilize <span style="color:red  ">National bank of ethiopia's</span> core banking technology which allows  us to serve you with innovative and efficient way. Our modern tools and systems ensure seamless service to enhance your financial experience.
+                            <p class="mb-4">
+                                we utilize
+                                <span style="color: red">National bank of ethiopia's</span> core
+                                banking technology which allows us to serve you with innovative
+                                and efficient way. Our modern tools and systems ensure seamless
+                                service to enhance your financial experience.
                             </p>
                             <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                         </div>
@@ -293,16 +343,31 @@
                 <div class="row g-5">
                     <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="about-item-content bg-white rounded p-5 h-100">
-                            <h4 class="text-primary display-4 ">About Our Institution</h4>
-                            <h1 class="display-4 mb-4"><!-- High Range of Exploring Protection --></h1>
-                            <p class="text-justify ">The Harar Microfinance Institute S.C. was established in accordance with Proclamation No. 40/1996 (Licensing and Supervision of Micro Financing Institutions Proclamation), which governs the establishment, licensing, and supervision of microfinance institutions (MFIs).
+                            <h4 class="text-primary display-4">About Our Institution</h4>
+                            <h1 class="display-4 mb-4">
+                                <!-- High Range of Exploring Protection -->
+                            </h1>
+                            <p class="text-justify">
+                                The Harar Microfinance Institute S.C. was established in
+                                accordance with Proclamation No. 40/1996 (Licensing and
+                                Supervision of Micro Financing Institutions Proclamation), which
+                                governs the establishment, licensing, and supervision of
+                                microfinance institutions (MFIs).
                             </p>
-                            <p>This is our Motto 
+                            <p>This is our Motto</p>
+                            <p class="text-dark">
+                                <i class="fa fa-check text-primary me-3"></i>Save regularly
                             </p>
-                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Save regularly</p>
-                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Loan when needed</p>
-                            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Repay your loans on time</p>
-                            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Fight Poverty</p>
+                            <p class="text-dark">
+                                <i class="fa fa-check text-primary me-3"></i>Loan when needed
+                            </p>
+                            <p class="text-dark mb-4">
+                                <i class="fa fa-check text-primary me-3"></i>Repay your loans on
+                                time
+                            </p>
+                            <p class="text-dark mb-4">
+                                <i class="fa fa-check text-primary me-3"></i>Fight Poverty
+                            </p>
                             <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a>
                         </div>
                     </div>
@@ -311,7 +376,7 @@
                             <div class="row g-4 justify-content-center">
                                 <div class="col-12">
                                     <div class="rounded bg-light">
-                                        <img src="img/HMFI cover page.jpg" class="img-fluid rounded w-100" alt="">
+                                        <img src="img/HMFI cover page.jpg" class="img-fluid rounded w-100" alt="" />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -326,7 +391,8 @@
                                 <div class="col-sm-6">
                                     <div class="counter-item bg-light rounded p-3 h-100">
                                         <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">10000000</span>
+                                            <span class="text-primary fs-2 fw-bold"
+                                                data-toggle="counter-up">10000000</span>
                                             <span class="h1 fw-bold text-primary">+</span>
                                         </div>
                                         <h4 class="mb-0 text-dark">Asset Value</h4>
@@ -335,7 +401,8 @@
                                 <div class="col-sm-6">
                                     <div class="counter-item bg-light rounded p-3 h-100">
                                         <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">10000000</span>
+                                            <span class="text-primary fs-2 fw-bold"
+                                                data-toggle="counter-up">10000000</span>
                                             <span class="h1 fw-bold text-primary">+</span>
                                         </div>
                                         <h4 class="mb-0 text-dark">Paid up Capital</h4>
@@ -379,25 +446,29 @@
         <!-- Service Start -->
         <div class="container-fluid service py-5">
             <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
                     <h4 class="text-primary display-4">Products & Services</h4>
                     <h1 class="display-4 mb-4"><!-- We Provide Best Services --></h1>
-                    <p class="mb-0"> </p>
+                    <p class="mb-0"></p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-img">
-                                
-                                <img src="img/saving product.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/saving product.jpg" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
                             </div>
                             <div class="service-content p-4">
                                 <div class="service-content-inner">
-                                    <a href="#" class=" text-justify d-inline-block h4 mb-4">Saving Products</a>
-                                    <p class=" text-justify mb-4">we have different types of savings products that are designed to help clients build financial security with flexible terms and competitive interest rates. Whether for short-term needs or long-term goal <br><br></p>
+                                    <a href="#" class="text-justify d-inline-block h4 mb-4">Saving Products</a>
+                                    <p class="text-justify mb-4">
+                                        we have different types of savings products that are
+                                        designed to help clients build financial security with
+                                        flexible terms and competitive interest rates. Whether for
+                                        short-term needs or long-term goal <br /><br />
+                                    </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
                                 </div>
                             </div>
@@ -406,7 +477,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/loan1.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/loan1.jpg" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -414,7 +485,12 @@
                             <div class="service-content p-4">
                                 <div class="service-content-inner">
                                     <a href="#" class="d-inline-block h4 mb-4">Loan Products</a>
-                                    <p class=" text-justify mb-4">We provide tailored loan solutions to empower businesses and individuals with flexible repayment options and competitive rates. Our loans are designed to support your growth <br><br></p>
+                                    <p class="text-justify mb-4">
+                                        We provide tailored loan solutions to empower businesses and
+                                        individuals with flexible repayment options and competitive
+                                        rates. Our loans are designed to support your growth
+                                        <br /><br />
+                                    </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
                                 </div>
                             </div>
@@ -423,7 +499,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/islam.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/islam.png" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -431,8 +507,12 @@
                             <div class="service-content p-4">
                                 <div class="service-content-inner">
                                     <a href="#" class="d-inline-block h4 mb-4">Islamic Products</a>
-                                    <p class=" text-justify mb-4">Our Sharia-compliant products ensure ethical and halal methods for both saving and loans by offering interest-free solutions. These transparent products are designed to meet your financial needs while strictly adhering to Islamic law.
-                                        </p>
+                                    <p class="text-justify mb-4">
+                                        Our Sharia-compliant products ensure ethical and halal
+                                        methods for both saving and loans by offering interest-free
+                                        solutions. These transparent products are designed to meet
+                                        your financial needs while strictly adhering to Islamic law.
+                                    </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
                                 </div>
                             </div>
@@ -441,7 +521,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/digital.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/digital.png" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -449,7 +529,10 @@
                             <div class="service-content p-4">
                                 <div class="service-content-inner">
                                     <a href="#" class="d-inline-block h4 mb-4">Digital Financing</a>
-                                    <p class="mb-4">coming soonbr! <br><br><br><br> <br><br> </p>
+                                    <p class="mb-4">
+                                        coming soonbr! <br /><br /><br /><br />
+                                        <br /><br />
+                                    </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
                                 </div>
                             </div>
@@ -465,8 +548,6 @@
 
         <!-- FAQs Start -->
 
-
-
         <div class="container-fluid faq-section bg-light py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
@@ -474,127 +555,222 @@
                         <div class="h-100">
                             <div class="mb-5">
                                 <h4 class="text-primary display-4">Some Important FAQ's</h4>
-                                <h1 class="display-4 mb-0"><!-- Common Frequently Asked Questions --></h1>
+                                <h1 class="display-4 mb-0">
+                                    <!-- Common Frequently Asked Questions -->
+                                </h1>
                             </div>
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button border-0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
                                             Q: What is the criteria for getting a loan?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse show active"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body rounded">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias officiis quos, asperiores explicabo at atque similique ex esse repellendus odit doloribus corporis mollitia nihil laborum nostrum, doloremque sint ad.
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Omnis alias officiis quos, asperiores explicabo at
+                                            atque similique ex esse repellendus odit doloribus
+                                            corporis mollitia nihil laborum nostrum, doloremque sint
+                                            ad.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
                                             Q: How much money can I borrow?
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus neque reiciendis, nobis esse nihil nemo modi ad eum voluptate, quod laborum dolorum, iusto adipisci excepturi vero blanditiis. Fuga, possimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptas fuga nisi nulla inventore! Delectus perferendis rerum eaque voluptate ullam totam in quasi? Voluptate, reprehenderit ad sed veritatis dolores sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos facere quibusdam recusandae incidunt sint quae voluptas in. Minus ipsam dolor quisquam, adipisci accusantium sed quo officia ducimus excepturi eligendi!
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Architecto doloribus neque reiciendis, nobis esse
+                                            nihil nemo modi ad eum voluptate, quod laborum dolorum,
+                                            iusto adipisci excepturi vero blanditiis. Fuga, possimus
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Natus voluptas fuga nisi nulla inventore! Delectus
+                                            perferendis rerum eaque voluptate ullam totam in quasi?
+                                            Voluptate, reprehenderit ad sed veritatis dolores sit?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ad quos facere quibusdam recusandae incidunt sint quae
+                                            voluptas in. Minus ipsam dolor quisquam, adipisci
+                                            accusantium sed quo officia ducimus excepturi eligendi!
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
                                             Q: What are the products you offer?
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas vel at quaerat harum quis distinctio animi rem corporis dolor cupiditate recusandae eius officiis quos corrupti ullam, veniam consectetur repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia consequatur soluta, nostrum molestiae saepe, incidunt, impedit deleniti nulla neque veniam suscipit id voluptatibus totam consectetur minus hic quidem dignissimos.
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Deleniti, quas vel at quaerat harum quis distinctio
+                                            animi rem corporis dolor cupiditate recusandae eius
+                                            officiis quos corrupti ullam, veniam consectetur repellat?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Deserunt quia consequatur soluta, nostrum molestiae saepe,
+                                            incidunt, impedit deleniti nulla neque veniam suscipit id
+                                            voluptatibus totam consectetur minus hic quidem
+                                            dignissimos.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
                                             Q: How can I start a Savings a/c at Harar MFI?
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas vel at quaerat harum quis distinctio animi rem corporis dolor cupiditate recusandae eius officiis quos corrupti ullam, veniam consectetur repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia consequatur soluta, nostrum molestiae saepe, incidunt, impedit deleniti nulla neque veniam suscipit id voluptatibus totam consectetur minus hic quidem dignissimos.
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Deleniti, quas vel at quaerat harum quis distinctio
+                                            animi rem corporis dolor cupiditate recusandae eius
+                                            officiis quos corrupti ullam, veniam consectetur repellat?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Deserunt quia consequatur soluta, nostrum molestiae saepe,
+                                            incidunt, impedit deleniti nulla neque veniam suscipit id
+                                            voluptatibus totam consectetur minus hic quidem
+                                            dignissimos.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Q: How is Harar Microfinance Institute different from other MFIs?
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Q: How is Harar Microfinance Institute different from
+                                            other MFIs?
                                         </button>
                                     </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas vel at quaerat harum quis distinctio animi rem corporis dolor cupiditate recusandae eius officiis quos corrupti ullam, veniam consectetur repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia consequatur soluta, nostrum molestiae saepe, incidunt, impedit deleniti nulla neque veniam suscipit id voluptatibus totam consectetur minus hic quidem dignissimos.
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Deleniti, quas vel at quaerat harum quis distinctio
+                                            animi rem corporis dolor cupiditate recusandae eius
+                                            officiis quos corrupti ullam, veniam consectetur repellat?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Deserunt quia consequatur soluta, nostrum molestiae saepe,
+                                            incidunt, impedit deleniti nulla neque veniam suscipit id
+                                            voluptatibus totam consectetur minus hic quidem
+                                            dignissimos.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingSix">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
                                             Q: Why should I deposit my money at Harar MFI?
                                         </button>
                                     </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quas vel at quaerat harum quis distinctio animi rem corporis dolor cupiditate recusandae eius officiis quos corrupti ullam, veniam consectetur repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia consequatur soluta, nostrum molestiae saepe, incidunt, impedit deleniti nulla neque veniam suscipit id voluptatibus totam consectetur minus hic quidem dignissimos.
+                                            A: Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Deleniti, quas vel at quaerat harum quis distinctio
+                                            animi rem corporis dolor cupiditate recusandae eius
+                                            officiis quos corrupti ullam, veniam consectetur repellat?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Deserunt quia consequatur soluta, nostrum molestiae saepe,
+                                            incidunt, impedit deleniti nulla neque veniam suscipit id
+                                            voluptatibus totam consectetur minus hic quidem
+                                            dignissimos.
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Additional Questions -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingSeven">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                            aria-expanded="false" aria-controls="collapseSeven">
                                             Q: What documents are required for loan application?
                                         </button>
                                     </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nobis. Assumenda, fugit. Eos sit magni dolor eveniet laboriosam aspernatur adipisci voluptatum? Repellat alias molestias minus accusamus, odit libero sequi eius!
+                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Cumque, nobis. Assumenda, fugit. Eos sit magni dolor
+                                            eveniet laboriosam aspernatur adipisci voluptatum?
+                                            Repellat alias molestias minus accusamus, odit libero
+                                            sequi eius!
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingEight">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                            aria-expanded="false" aria-controls="collapseEight">
                                             Q: Can I apply for a loan online?
                                         </button>
                                     </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                        aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed reiciendis velit itaque debitis, aspernatur laboriosam error excepturi tenetur autem commodi quaerat. Quas mollitia maxime earum doloremque molestiae in magni?
+                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. At, sed reiciendis velit itaque debitis, aspernatur
+                                            laboriosam error excepturi tenetur autem commodi quaerat.
+                                            Quas mollitia maxime earum doloremque molestiae in magni?
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingNine">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                            aria-expanded="false" aria-controls="collapseNine">
                                             Q: What is the interest rate on loans?
                                         </button>
                                     </h2>
-                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                    <div id="collapseNine" class="accordion-collapse collapse"
+                                        aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, laborum. Tempore dignissimos voluptatibus distinctio quibusdam, optio aliquid aliquam mollitia? Repellat voluptates dolore fugiat in officia eos at harum rerum.
+                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Rem, laborum. Tempore dignissimos voluptatibus
+                                            distinctio quibusdam, optio aliquid aliquam mollitia?
+                                            Repellat voluptates dolore fugiat in officia eos at harum
+                                            rerum.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTen">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                            aria-expanded="false" aria-controls="collapseTen">
                                             Q: How do I contact customer support?
                                         </button>
                                     </h2>
-                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                    <div id="collapseTen" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, obcaecati laborum. Deserunt dolorum nam itaque facilis earum repudiandae, maiores tenetur dignissimos laborum. Quos similique explicabo quaerat consequatur magni vero nihil.
+                                            A: Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Debitis, obcaecati laborum. Deserunt dolorum nam
+                                            itaque facilis earum repudiandae, maiores tenetur
+                                            dignissimos laborum. Quos similique explicabo quaerat
+                                            consequatur magni vero nihil.
                                         </div>
                                     </div>
                                 </div>
@@ -604,105 +780,36 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- FAQs End -->
-
-<!-- Our Partners Slider (Responsive, 5 visible at once) -->
-<div class="container-fluid ">
-    <div class="container">
-<div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
-   <!--  <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+1" class="d-block w-100" alt="Partner 1">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+2" class="d-block w-100" alt="Partner 2">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+3" class="d-block w-100" alt="Partner 3">
-          </div>
-          <div class="col-6 col-md-2 col-sm-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+4" class="d-block w-100" alt="Partner 4">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+5" class="d-block w-100" alt="Partner 5">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+6" class="d-block w-100" alt="Partner 6">
-          </div>
-        </div>
-      </div>
-  
-
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+7" class="d-block w-100" alt="Partner 7">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+8" class="d-block w-100" alt="Partner 8">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+9" class="d-block w-100" alt="Partner 9">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+10" class="d-block w-100" alt="Partner 10">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+11" class="d-block w-100" alt="Partner 11">
-          </div>
-          <div class="col-6 col-md-2">
-            <img src="https://via.placeholder.com/150x100?text=Partner+12" class="d-block w-100" alt="Partner 12">
-          </div>
-        </div>
-      </div> -->
-    </div>
-  
-    <!-- Carousel Controls -->
-<!--     <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
-  </div>
-  
-
-
-  <!-- Bootstrap CSS and JS (Bootstrap 5) -->
-  
-    </div>
-</div>
-
-
-
 
         <!-- Testimonial Start -->
         <div class="container-fluid testimonial pb-5">
             <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary"><br></h4>
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                    <h4 class="text-primary"><br /></h4>
                     <h1 class="display-4 text-primary mb-4">Testimonial</h1>
-                    <p class="mb-0">How happy are our clients?
-                    </p>
+                    <p class="mb-0">How happy are our clients?</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
                     <div class="testimonial-item bg-light rounded">
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                        alt="" />
                                 </div>
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
                                     <h4 class="text-dark mb-1">Mariam Ahmed</h4>
                                     <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                                    <p class="mb-0">
+                                        "Working with Harar Microfinance Institute has truly been a
+                                        game-changer for my business. The personalized financial
+                                        solutions they offer have helped me expand my operations and
+                                        reach new markets..."
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -711,14 +818,20 @@
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                        alt="" />
                                 </div>
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
                                     <h4 class="text-dark mb-1">Mariam Ahmed</h4>
                                     <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                                    <p class="mb-0">
+                                        "Working with Harar Microfinance Institute has truly been a
+                                        game-changer for my business. The personalized financial
+                                        solutions they offer have helped me expand my operations and
+                                        reach new markets..."
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -727,110 +840,121 @@
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="">
+                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                        alt="" />
                                 </div>
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="d-flex flex-column my-auto text-start p-3 p-md-4">
                                     <h4 class="text-dark mb-1">Mariam Ahmed</h4>
                                     <p class="mb-2">Small Business Owner</p>
-                                    <p class="mb-0">"Working with Harar Microfinance Institute has truly been a game-changer for my business. The personalized financial solutions they offer have helped me expand my operations and reach new markets..."</p>
+                                    <p class="mb-0">
+                                        "Working with Harar Microfinance Institute has truly been a
+                                        game-changer for my business. The personalized financial
+                                        solutions they offer have helped me expand my operations and
+                                        reach new markets..."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Repeat similar structure for other testimonials -->
                 </div>
-                
             </div>
         </div>
         <!-- Testimonial End -->
-        
-<!-- Footer Start -->
-<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-    <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
-        <div class="row g-5">
-            <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="footer-item">
-                    <div class="footer-item " style="margin:0 auto 0 auto">
-                        <div class="text-center">
-                            <br>
-                            <img class="logo" src="img/logotrasparent.png" style="max-width:100px;" alt="Logo">
-                        </div>
-                        <h4 class="text-primary text-uppercase fw-bold  px-lg-1 py-lg-1 mb-0 text-center "><br>Harar Microfinance <br>Institution S.C. </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-2">
-                <div class="footer-item">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item">
-                    <h4 class="text-white mb-4">Support</h4>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="footer-item">
-                    <h4 class="text-white mb-4">Contact Info</h4>
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                        <p class="text-white mb-0">Harar , Ethiopia</p>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-envelope text-primary me-3"></i>
-                        <p class="text-white mb-0">ContactCenter@Hararmfi.com</p>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                        <p class="text-white mb-0">0256663745 , 0256664078</p>
-                    </div>
 
-                    <div class="d-flex">
-                        <br>
-                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
-                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
-                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                        <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0"
+                style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <div class="footer-item" style="margin: 0 auto 0 auto">
+                                <div class="text-center">
+                                    <br />
+                                    <img class="logo" src="img/logotrasparent.png" style="max-width: 100px"
+                                        alt="Logo" />
+                                </div>
+                                <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center">
+                                    <br />Harar Microfinance <br />Institution S.C.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">Harar , Ethiopia</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">ContactCenter@Hararmfi.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">0256663745 , 0256664078</p>
+                            </div>
+
+                            <div class="d-flex">
+                                <br />
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                        class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                        class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                        class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                        class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Footer End -->
+        <!-- Footer End -->
 
-<!-- Copyright Start -->
+        <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="text-white">&copy; 2024  HMFI </a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="text-white">&copy; 2024 HMFI </a>, All right
+                            reserved.</span>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- Copyright End -->
 
-
         <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -840,15 +964,14 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/snowflake.js"></script>
         <script src="js/tab.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="engine1/wowslider.js"></script>
         <script type="text/javascript" src="engine1/script.js"></script>
-
-    </body>
+</body>
 
 </html>
