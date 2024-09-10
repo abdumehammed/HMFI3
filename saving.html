@@ -58,7 +58,7 @@
         /* Expanded state */
         .content-section.show {
             opacity: 1;
-            max-height: 500px;
+            max-height: auto;
             /* Adjust based on the content */
         }
 
@@ -161,11 +161,12 @@
                         <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Products &
+                            <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Products &
                                 Services</a>
                             <div class="dropdown-menu">
-                                <a href="saving.html" class="dropdown-item">Saving Products</a>
+                                <a href="saving.html" class="dropdown-item ">Saving Products</a>
                                 <a href="loan.html" class="dropdown-item">Loan Products</a>
+                                <a href="islamic.html" class="dropdown-item ">Islamic </a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
@@ -222,9 +223,9 @@
                         <aside class="col-md-3">
                             <ul class="list-group">
                                 <!-- Set the first item to 'active' by default -->
-                                <li class="list-group-item active" onclick="showContent('compulsory_saving', this)">Compulsory Saving</li>
-                                <li class="list-group-item" onclick="showContent('Voluntary_saving', this)">Voluntary Savings</li>
+                                <li class="list-group-item active" onclick="showContent('Voluntary_saving', this)">Voluntary Savings</li>
                                 <li class="list-group-item" onclick="showContent('Regular_saving', this)">Regular saving</li>
+                                <li class="list-group-item " onclick="showContent('mandatory_saving', this)">Mandatory saving</li>
                                 <li class="list-group-item" onclick="showContent('institutional_saving', this)">Institutional savings (SFL)</li>
                             </ul>
                         </aside>
@@ -233,15 +234,92 @@
                         <main class="col-md-9">
                             <!-- Content for Savings Account -->
                             <!-- Set the first content section to 'show' by default -->
-                            <div id="compulsory_saving" class="content-section show">
+                            <div id="Voluntary_saving" class="content-section show">
+                              
                                 <div class="card mb-4 show">
                                     <div class="card-body">
-                                        <h4>What are Compulsory Savings?</h4>
+
+                                            <h2>Voluntary Saving: Flexible, Client-Centered Savings Solutions with Harar MFI</h2>
+                                            <p>
+                                                Voluntary Saving is a uniquely flexible savings product offered by Harar MFI, allowing clients to tailor both the amount and frequency of their deposits to meet their personal financial goals and circumstances. Unlike many traditional savings plans, the power to decide how much to save and when lies entirely with the client, ensuring that the product fits seamlessly into the client’s lifestyle and financial situation.
+                                            </p>
+                                        
+                                            <h3>Who Can Participate?</h3>
+                                            <p>Voluntary Saving is available to:</p>
+                                            <ul>
+                                                <li><strong>Individual clients</strong>: Whether you are an individual seeking a personal savings solution, Harar MFI provides the flexibility to start saving at your own pace.</li>
+                                                <li><strong>Group members</strong>: Members of savings groups can also participate, and what sets Harar MFI apart is that a member can withdraw their voluntary savings at any time, even if their group has an outstanding loan with the institution. This ensures that each individual retains control over their funds.</li>
+                                            </ul>
+                                        
+                                            <h3>Harar MFI’s Open Savings Policy</h3>
+                                            <p>
+                                                Harar MFI operates under an <strong>open voluntary savings policy</strong> that welcomes savings and deposits from a broad range of clients:
+                                            </p>
+                                            <ul>
+                                                <li><strong>Borrowers</strong>: Those with loans can also save without restrictions, offering a safety net for future financial planning.</li>
+                                                <li><strong>Non-borrowers</strong>: Even if you don’t have a loan with Harar MFI, you can still enjoy the benefits of voluntary savings. This includes both individual savers and institutional clients.</li>
+                                            </ul>
+                                            <p>This inclusive approach highlights Harar MFI’s commitment to financial empowerment, ensuring that anyone—whether a borrower, non-borrower, individual, or organization—can find value in a savings plan that meets their needs.</p>
+                                        
+                                            <h3>Types of Voluntary Savings Products</h3>
+                                            <p>Harar MFI offers a variety of voluntary savings products designed to cater to the diverse needs of its clients:</p>
+                                            <ul>
+                                                <li><strong>Passbook Savings</strong>: A traditional savings option where clients record transactions in a physical passbook, providing a tangible and easy-to-access record of their savings activity.</li>
+                                                <li><strong>Box Saving</strong>: This innovative approach encourages clients to deposit smaller amounts frequently, often with the use of a secure savings box, promoting a culture of consistent saving, particularly in rural areas.</li>
+                                                <li><strong>Mobile Saving</strong>: Harar MFI leverages mobile technology to offer mobile savings, allowing clients to deposit and manage their savings conveniently from their phones. This service is especially beneficial for those who may not have easy access to a physical branch.</li>
+                                                <li><strong>Fixed-Time Deposits</strong>: For clients looking for more structured savings, fixed-time deposits offer a higher interest rate for locking in funds over a set period. This product is ideal for those aiming to achieve specific financial goals over the medium to long term.</li>
+                                                <li><strong>Non-Interest-Bearing Deposit Services</strong>: For clients who prefer or require savings accounts that do not accrue interest, Harar MFI offers non-interest-bearing deposit options, catering to clients with specific religious or financial preferences.</li>
+                                            </ul>
+                                        
+                                            <h3>Empowering Clients Through Financial Flexibility</h3>
+                                            <p>
+                                                At the heart of the Voluntary Savings product is the philosophy of <strong>financial flexibility</strong>. Harar MFI understands that the financial needs and capabilities of its clients vary widely, and this product reflects that understanding by removing rigid saving schedules and minimum deposit requirements.
+                                            </p>
+                                            <p>
+                                                Clients have the freedom to adjust their savings in response to changes in income or expenses, making it a perfect solution for individuals in both urban and rural areas, as well as for small business owners and agricultural workers who experience seasonal fluctuations in income.
+                                            </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="Regular_saving" class="content-section hidden">
+                              
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="regular-saving">
+                                          
+                                                <h2>Regular Savings</h2>
+                                                <p>
+                                                    Regular Savings is a flexible saving product offered by Harar MFI that allows clients to contribute funds on a consistent basis. This type of saving is characterized by its voluntary nature, meaning that clients have the autonomy to decide both the amount they save and the frequency of their contributions. This flexibility enables clients to tailor their savings plan according to their personal financial situation and goals.
+                                                </p>
+                                            
+                                                <h3>Key Features:</h3>
+                                                <ul>
+                                                    <li><strong>Client-Controlled Contributions:</strong> Clients have the freedom to determine how much they want to save and how often they want to make deposits. This allows individuals to manage their savings in a way that best fits their income and expenditure patterns.</li>
+                                                    <li><strong>Withdrawal Restrictions:</strong> Although clients can set their own savings amounts and schedules, there is a restriction on withdrawing these funds if the client has an outstanding loan with Harar MFI. This policy is in place to ensure that the savings remain as a security for the client's loan obligations. By doing so, it helps maintain financial stability and supports the client's responsibility as a co-guarantor for other members' loans within their group.</li>
+                                                    <li><strong>Security for Co-Guarantees:</strong> One of the primary reasons for this restriction is to provide a form of financial security. Regular Savings serve as a safeguard for clients who act as co-guarantors for loans within their group. By keeping these funds secure and inaccessible while loans are outstanding, it helps to ensure that there is always a safety net available to cover potential liabilities.</li>
+                                                </ul>
+                                            
+                                                <h3>Importance:</h3>
+                                                <p>
+                                                    Regular Savings not only offers clients a structured way to build up their savings but also plays a crucial role in the broader financial ecosystem of Harar MFI. It provides a measure of security for both individual and group loans, fostering a supportive environment where clients can rely on their savings as a form of financial backing. This system helps to reinforce the stability and trust within the lending groups, ensuring that all members can meet their financial commitments.
+                                                </p>
+                                
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mandatory_saving" class="content-section hidden">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h4>What are Mandatory Savings?</h4>
                                         <p>
-                                            means mandatory deposits made for the purpose of enabling the individuals, groups or businesses making the saving to qualify to receive loans from an authorized institution and serve as collateral against the loans so obtained
+                                            means Compulsory deposits made for the purpose of enabling the individuals, groups or businesses making the saving to qualify to receive loans from an authorized institution and serve as collateral against the loans so obtained
                                            
                                         </p>
-                                        <h4>Key Features of Compulsory Savings:</h4>
+                                        <h4>Key Features of Mandatory Savings:</h4>
                                         <p> Compulsory savings, also known as mandatory or forced savings, refers to a type of savings program where individuals are required to regularly deposit a fixed amount of money into a savings account. This type of saving is often linked to microfinance institutions, credit unions, or loan agreements, where saving is a condition for accessing other financial services, such as loans.
 
                                             In the context of microfinance or cooperative models, compulsory savings can serve several purposes:
@@ -254,40 +332,27 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!-- Content for Fixed Deposit -->
-                            <div id="Voluntary_saving" class="content-section hidden">
-                              
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h4 class="card-title">What is Voluntary Saving?</h4>
-                                        <p class="card-text">
-                                            Voluntary saving is a saving product that its amount and frequency of saving determined by the client itself. An individual client, member of the group, can have voluntary saving. A member of a group can withdraw its voluntary saving any time even when the group has loan outstanding with Harar MFI.
-                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="Regular_saving" class="content-section hidden">
-                              
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        <h4 class="card-title">What is Regular Saving?</h4>
-                                        <p class="card-text"> 
-                                            Harar MFI pursues an open voluntary saving policy of accepting savings and deposit from borrowers; non-borrowers (both individuals and institutions).  Voluntary saving products are passbook savings, box saving, mobile saving, fixed time deposits, and non-interest-bearing deposit services.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-           
+
                             <div id="institutional_saving" class="content-section hidden">
                               
                                 <div class="card mb-4">
                                     <div class="card-body">
                                         <h4 class="card-title">What is Institutional Saving?</h4>
-                                        <p class="card-text">
-
-                                            Institutional saving is product of a savings of Community Based Institutions (CBIs) such as Edir, Churches, Cooperatives, unions, different Associations, etc. CBIs can open institutional voluntary saving accounts and save their money with Harar MFI.  In general, all saving products bear interest to their depositors and that Harar MFI pays 8% interest per annum on all saving products
+                                        <p class="card-text text-justify">
+                                            <p>Institutional Savings is a specialized savings product designed for Community-Based Institutions (CBIs), such as Edirs, Churches, Cooperatives, Unions, and various Associations. This product allows these institutions to open institutional voluntary saving accounts and deposit their funds with Harar Microfinance Institution (Harar MFI).</p>
+                                            
+                                            <h4>Key Features:</h4>
+                                            <ul>
+                                                <li><strong>Eligibility:</strong> Community-Based Institutions (CBIs) including Edirs, Churches, Cooperatives, Unions, and other Associations are eligible to open Institutional Voluntary Savings accounts with Harar MFI.</li>
+                                                <li><strong>Flexibility:</strong> Institutions can deposit and manage their funds according to their specific needs and preferences, with no restrictions on the amount or frequency of deposits.</li>
+                                                <li><strong>Interest Rates:</strong> All savings products at Harar MFI, including Institutional Savings, earn interest. Harar MFI offers a competitive interest rate of 8% per annum on all savings products, ensuring that deposited funds grow over time.</li>
+                                                <li><strong>Deposit Management:</strong> Institutions have the flexibility to manage their deposits through various channels, ensuring convenient access and control over their savings.</li>
+                                                <li><strong>Account Features:</strong> Institutional accounts come with features tailored to the needs of community organizations, including detailed account statements and access to dedicated customer support.</li>
+                                            </ul>
+                                            
+                                            <p>By offering this savings product, Harar MFI aims to support community-based organizations in managing their funds efficiently while earning interest on their deposits. This initiative also reflects Harar MFI’s commitment to providing tailored financial solutions that cater to the diverse needs of its clients.</p>
+                                        </body>
 
                                         </p>
                                     </div>
