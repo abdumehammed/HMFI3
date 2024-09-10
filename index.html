@@ -64,6 +64,7 @@
         .carousel-img img {
             height: 100%;
             object-fit: cover;
+
             /* Ensures images cover the container */
         }
 
@@ -115,21 +116,7 @@
 </head>
 <body>
     <div class="snowflakes-container"></div>
-    <script>
-        const snowflakeContainer = document.querySelector('.snowflakes-container');
-        const snowflakeImageSrc = 'img/Adey.png'; // Adjust path as needed
-        const numberOfSnowflakes = 20;
-
-        for (let i = 0; i < numberOfSnowflakes; i++) {
-            const snowflake = document.createElement('img');
-            snowflake.src = snowflakeImageSrc;
-            snowflake.classList.add('snowflake');
-            snowflake.style.left = Math.random() * window.innerWidth + 'px';
-            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
-            snowflake.style.animationDelay = Math.random() * 5 + 's';
-            snowflakeContainer.appendChild(snowflake);
-        }
-    </script>
+   
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -189,7 +176,8 @@
             </div>
         </div>
     </div>
-</div><!-- Topbar End -->
+</div>
+<!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
@@ -197,7 +185,7 @@
             <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
                 <!-- Logo and Institution Name aligned left -->
                 <a href="#" class="d-flex align-items-center">
-                    <img class="logo" src="img/logotrasparent.png" style="max-width: 100px" alt="Logo" />
+                    <img class="logo" src="img/logotrasparent.png " loading="lazy" style="max-width: 100px" alt="Logo" />
                     <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
                         Harar Microfinance <br />
                         Institution S.C.
@@ -237,10 +225,10 @@
             <div class="ws_images">
                 <ul>
                     <li>
-                        <img src="data1/images/22.jpg" alt="css image gallery" title="Welcome" id="" />
+                        <img src="data1/images/22.jpg"  loading="lazy" alt="css image gallery" title="Welcome" id="" />
                     </li>
                     <li>
-                        <img src="data1/images/11.jpg" alt="1" title="Welcome" id="wows1_1" />
+                        <img src="data1/images/11.jpg"  loading="lazy" alt="1" title="Welcome" id="wows1_1" />
                     </li>
                 </ul>
             </div>
@@ -366,7 +354,7 @@
                             <div class="row g-4 justify-content-center">
                                 <div class="col-12">
                                     <div class="rounded bg-light">
-                                        <img src="img/HMFI cover page.jpg" class="img-fluid rounded w-100" alt="" />
+                                        <img src="img/HMFI cover page.jpg" loading="lazy" class="img-fluid rounded w-100" alt="" />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -382,7 +370,7 @@
                                     <div class="counter-item bg-light rounded p-3 h-100">
                                         <div class="counter-counting">
                                             <span class="text-primary fs-2 fw-bold"
-                                                data-toggle="counter-up">429M</span>
+                                                data-toggle="counter-up">429,000,000</span>
                                             <span class="h1 fw-bold text-primary">+</span>
                                         </div>
                                         <h4 class="mb-0 text-dark">Asset Value</h4>
@@ -392,7 +380,7 @@
                                     <div class="counter-item bg-light rounded p-3 h-100">
                                         <div class="counter-counting">
                                             <span class="text-primary fs-2 fw-bold"
-                                                data-toggle="counter-up">302M</span>
+                                                data-toggle="counter-up">302,000,000</span>
                                             <span class="h1 fw-bold text-primary">+</span>
                                         </div>
                                         <h4 class="mb-0 text-dark">Paid up Capital</h4>
@@ -419,8 +407,8 @@
                                 <div class="col-sm-6">
                                     <div class="counter-item bg-light rounded p-3 h-100">
                                         <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">5</span>
-                                            <span class="h1 fw-bold text-primary">+</span>
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">4</span>
+                                            <span class="h1 fw-bold text-primary"></span>
                                         </div>
                                         <h4 class="mb-0 text-dark">Branches</h4>
                                     </div>
@@ -445,7 +433,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/saving product.jpg" class="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/saving product.jpg" loading="lazy" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -467,7 +455,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/loan1.jpg" class="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/loan1.jpg"  loading="lazy" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -489,7 +477,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/islam.png" class="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/islam.png" loading="lazy" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -503,7 +491,7 @@
                                         solutions. These transparent products are designed to meet
                                         your financial needs while strictly adhering to Islamic law.
                                     </p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="saving.html">Read More</a>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="islamic.html">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +499,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/digital.png" class="img-fluid rounded-top w-100" alt="" />
+                                <img src="img/digital.png" loading="lazy" class="img-fluid rounded-top w-100" alt="" />
                                 <div class="service-icon p-3">
                                     <i class=""></i>
                                 </div>
@@ -786,7 +774,7 @@
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                    <img src="img/team-1.jpg" loading="lazy" class="img-fluid w-100 rounded" style="object-fit: cover"
                                         alt="" />
                                 </div>
                             </div>
@@ -808,7 +796,7 @@
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                    <img src="img/team-1.jpg"  loading="lazy" class="img-fluid w-100 rounded" style="object-fit: cover"
                                         alt="" />
                                 </div>
                             </div>
@@ -830,7 +818,7 @@
                         <div class="row g-0 flex-column flex-md-row">
                             <div class="col-12 col-md-4">
                                 <div class="h-100">
-                                    <img src="img/team-1.jpg" class="img-fluid w-100 rounded" style="object-fit: cover"
+                                    <img src="img/team-1.jpg" loading="lazy" class="img-fluid w-100 rounded" style="object-fit: cover"
                                         alt="" />
                                 </div>
                             </div>
@@ -864,7 +852,7 @@
                             <div class="footer-item" style="margin: 0 auto 0 auto">
                                 <div class="text-center">
                                     <br />
-                                    <img class="logo" src="img/logotrasparent.png" style="max-width: 100px"
+                                    <img class="logo"  loading="lazy" src="img/logotrasparent.png" style="max-width: 100px"
                                         alt="Logo" />
                                 </div>
                                 <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center">
@@ -962,6 +950,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="engine1/wowslider.js"></script>
         <script type="text/javascript" src="engine1/script.js"></script>
+        <script>
+            const snowflakeContainer = document.querySelector('.snowflakes-container');
+            const snowflakeImageSrc = 'img/Adey.png'; // Adjust path as needed
+            const numberOfSnowflakes = 20;
+    
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('img');
+                snowflake.src = snowflakeImageSrc;
+                snowflake.classList.add('snowflake');
+                snowflake.style.left = Math.random() * window.innerWidth + 'px';
+                snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+                snowflake.style.animationDelay = Math.random() * 5 + 's';
+                snowflakeContainer.appendChild(snowflake);
+            }
+        </script>
 </body>
 
 </html>
