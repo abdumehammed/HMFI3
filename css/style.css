@@ -233,7 +233,7 @@ ul li .white:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(--bs-light);
+        /* background: var(--bs-light); */
         border-radius: 10px;
     }
 
@@ -380,6 +380,11 @@ ul li .white:hover{
 
 .feature .feature-item:hover {
     background: var(--bs-primary);
+    color:white;
+}
+.feature .feature-item:hover {
+    background: var(--bs-primary);
+
 }
 
 .feature .feature-item .feature-icon {
