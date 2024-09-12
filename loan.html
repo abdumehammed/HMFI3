@@ -36,6 +36,72 @@
 
     </style> -->
     <style>
+        button {
+    padding: 10px 20px;
+    background-color: #DE6726;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
            .center {
             display: block;
             margin-left: auto;
@@ -114,6 +180,7 @@
                 width: 100%;
             }
         }
+
     </style>
   <!-- Start WOWSlider.com HEAD section -->
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -217,13 +284,14 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        <button id="open-modal">Loan Calculator</button>
+
                         
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-
 
     <!-- Navbar & Hero End -->
 
@@ -730,7 +798,79 @@
         </div>
     </div>
 
+    <div id="loanModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Loan Amortization Calculator</h2>
+            <form id="loan-form">
+                <label for="principal">Principal (Br. ):</label>
+                <input type="number" id="principal" required>
+                
+                <label for="interest">Annual Interest Rate (%):</label>
+                <input type="number" id="interest" step="0.01" required>
+                
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="results">
+                <h3>Results</h3>
+                <p id="monthly-payment">Monthly Payment: Br. 0.00</p>
+                <p id="total-payment">Total Payment: Br. 0.00</p>
+                <p id="total-interest">Total Interest: Br. 0.00</p>
+            </div>
+        </div>
+    </div>
+<script>
+    // Modal handling
+const modal = document.getElementById("loanModal");
+const openModalButton = document.getElementById("open-modal");
+const closeModal = document.getElementsByClassName("close")[0];
 
+// Open modal when button is clicked
+openModalButton.onclick = function() {
+    modal.style.display = "flex";
+};
+
+// Close modal when "x" is clicked
+closeModal.onclick = function() {
+    modal.style.display = "none";
+};
+
+// Close modal when clicking outside of the modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+// Loan calculation logic
+document.getElementById('loan-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get user input
+    const principal = parseFloat(document.getElementById('principal').value);
+    const annualInterest = parseFloat(document.getElementById('interest').value);
+    const years = parseInt(document.getElementById('years').value);
+
+    // Calculate monthly interest rate and number of payments
+    const monthlyInterestRate = annualInterest / 100 / 12;
+    const numberOfPayments = years * 12;
+
+    // Calculate monthly payment
+    const monthlyPayment = (principal * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+    const totalPayment = monthlyPayment * numberOfPayments;
+    const totalInterest = totalPayment - principal;
+
+    // Display results
+    document.getElementById('monthly-payment').textContent = `Monthly Payment: $${monthlyPayment.toFixed(2)}`;
+    document.getElementById('total-payment').textContent = `Total Payment: $${totalPayment.toFixed(2)}`;
+    document.getElementById('total-interest').textContent = `Total Interest: $${totalInterest.toFixed(2)}`;
+});
+
+
+</script>
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
