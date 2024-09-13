@@ -67,7 +67,8 @@ button:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width:70%;
+
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -694,6 +695,30 @@ h3 {
                                 </div>
                                 
                                 </div>
+                                <div id="loanModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2>Loan Amortization Calculator</h2>
+                                        <form id="loan-form">
+                                            <label for="principal">Principal (Br. ):</label>
+                                            <input type="number" id="principal" required>
+                                            
+                                            <label for="interest">Annual Interest Rate (%):</label>
+                                            <input type="number" id="interest" step="0.01" required>
+                                            
+                                            <label for="years">Number of Years:</label>
+                                            <input type="number" id="years" required>
+                                            
+                                            <button type="submit">Calculate</button>
+                                        </form>
+                                        <div id="results">
+                                            <h3>Results</h3>
+                                            <p id="monthly-payment">Monthly Payment: Br. 0.00</p>
+                                            <p id="total-payment">Total Payment: Br. 0.00</p>
+                                            <p id="total-interest">Total Interest: Br. 0.00</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -798,30 +823,7 @@ h3 {
         </div>
     </div>
 
-    <div id="loanModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Loan Amortization Calculator</h2>
-            <form id="loan-form">
-                <label for="principal">Principal (Br. ):</label>
-                <input type="number" id="principal" required>
-                
-                <label for="interest">Annual Interest Rate (%):</label>
-                <input type="number" id="interest" step="0.01" required>
-                
-                <label for="years">Number of Years:</label>
-                <input type="number" id="years" required>
-                
-                <button type="submit">Calculate</button>
-            </form>
-            <div id="results">
-                <h3>Results</h3>
-                <p id="monthly-payment">Monthly Payment: Br. 0.00</p>
-                <p id="total-payment">Total Payment: Br. 0.00</p>
-                <p id="total-interest">Total Interest: Br. 0.00</p>
-            </div>
-        </div>
-    </div>
+
 <script>
     // Modal handling
 const modal = document.getElementById("loanModal");
