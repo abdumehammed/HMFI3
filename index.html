@@ -36,6 +36,75 @@
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
     <script type="text/javascript" src="engine1/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
+     <style>
+         button {
+    padding: 10px 20px;
+    background-color: #DE6726;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width:70%;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+     </style>
 </head>
 <body>
     <div class="snowflakes-container"></div>
@@ -93,10 +162,10 @@
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-flex justify-content-end">
                         <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/people/Harar-MicroFinance-Institution/61565622741044/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn p-0 text-primary me-3" href="https://x.com/hararmfi/"><i class="fab fa-twitter"></i></a>
+                            
+                            <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     <!-- s -->
                     </div>
@@ -140,6 +209,8 @@
                                </div>
                            </div>
                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                           <button id="open-modal">Loan Calculator</button>
+
       
                        </div>
                    </div>
@@ -541,10 +612,9 @@
 
                                                         </ul>
                                                         <p>Social Media</p>
-                                                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i>    </a>
-                                                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i>    </a>
-                                                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i>    </a>
-                                                                <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i>  </a>
+                                                                <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/people/Harar-MicroFinance-Institution/61565622741044/"><i class="fab fa-facebook-f"></i>    </a>
+                                                                <a class="btn p-0 text-primary me-3" href="https://x.com/hararmfi/"><i class="fab fa-twitter"></i>    </a>
+                                                                <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i class="fab fa-linkedin-in"></i>  </a>
                                                     </div>
                                         </div>
                                     </div>
@@ -744,13 +814,11 @@
     
                                 <div class="d-flex">
                                     <br />
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/people/Harar-MicroFinance-Institution/61565622741044/"><i
                                             class="fab fa-facebook-f text-white"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://x.com/hararmfi/"><i
                                             class="fab fa-twitter text-white"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
-                                            class="fab fa-instagram text-white"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                    <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i
                                             class="fab fa-linkedin-in text-white"></i></a>
                                 </div>
                             </div>
@@ -769,7 +837,79 @@
                 </div>
             </div>
         </div>
-
+        <div id="loanModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Loan Amortization Calculator</h2>
+                <form id="loan-form">
+                    <label for="principal">Principal (Br. ):</label>
+                    <input type="number" id="principal" required>
+                    
+                    <label for="interest">Annual Interest Rate (%):</label>
+                    <input type="number" id="interest" step="0.01" required>
+                    
+                    <label for="years">Number of Years:</label>
+                    <input type="number" id="years" required>
+                    
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="results">
+                    <h3>Results</h3>
+                    <p id="monthly-payment">Monthly Payment: Br. 0.00</p>
+                    <p id="total-payment">Total Payment: Br. 0.00</p>
+                    <p id="total-interest">Total Interest: Br. 0.00</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Modal handling
+        const modal = document.getElementById("loanModal");
+        const openModalButton = document.getElementById("open-modal");
+        const closeModal = document.getElementsByClassName("close")[0];
+        
+        // Open modal when button is clicked
+        openModalButton.onclick = function() {
+            modal.style.display = "flex";
+        };
+        
+        // Close modal when "x" is clicked
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        };
+        
+        // Close modal when clicking outside of the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+        
+        // Loan calculation logic
+        document.getElementById('loan-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            // Get user input
+            const principal = parseFloat(document.getElementById('principal').value);
+            const annualInterest = parseFloat(document.getElementById('interest').value);
+            const years = parseInt(document.getElementById('years').value);
+        
+            // Calculate monthly interest rate and number of payments
+            const monthlyInterestRate = annualInterest / 100 / 12;
+            const numberOfPayments = years * 12;
+        
+            // Calculate monthly payment
+            const monthlyPayment = (principal * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+            const totalPayment = monthlyPayment * numberOfPayments;
+            const totalInterest = totalPayment - principal;
+        
+            // Display results
+            document.getElementById('monthly-payment').textContent = `Monthly Payment: $${monthlyPayment.toFixed(2)}`;
+            document.getElementById('total-payment').textContent = `Total Payment: $${totalPayment.toFixed(2)}`;
+            document.getElementById('total-interest').textContent = `Total Interest: $${totalInterest.toFixed(2)}`;
+        });
+        
+        
+        </script>
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
