@@ -45,6 +45,17 @@
     border-radius: 5px;
     cursor: pointer;
 }
+/* Default size for desktop */
+.logo {
+    max-width: 100px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80px;
+    }
+}
 
 button:hover {
     background-color: #218838;
@@ -124,14 +135,7 @@ h3 {
         }
         
     </script>
-   
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
+
 
     <!-- Topbar Start -->
 
@@ -177,11 +181,12 @@ h3 {
    
     <!-- Navbar & Hero Start -->
     <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
-           <div class="container">
+           <div class="container" style="justify-content:space-evenly">
                <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
                    <!-- Logo and Institution Name aligned left -->
                    <a href="#" class="d-flex align-items-center">
-                       <img class="logo" src="img/logotrasparent.png" loading="lazy" style="max-width: 100px" alt="Logo" />
+                    <img class="logo" src="img/logotrasparent.png" loading="lazy" alt="Logo" />
+
                        <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
                            Harar Microfinance <br />
                            Institution S.C.
