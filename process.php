@@ -1,38 +1,41 @@
 <?php
-// Database connection settings
-$host = "localhost";  // Your host
-$dbname = "hararmzn_hmficomment"; // Your database name
-$username = "hararmzn_hamid"; // Your database username
-$password = "Higher#0913692903#"; // Your database password
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $subject = htmlspecialchars(trim($_POST['subject']));
+    $message = htmlspecialchars(trim($_POST['message']));
 
-try {
-    // Create a new PDO instance
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    // Check if form is submitted
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
+    // Validate inputs
+    if (!empty($name) && !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        
+        // Email subject
+        $email_subject = "Submission Confirmation";
+        
+        // Email body
+        $email_body = "
+        Name: $name\n
+        Email: $email\n
+        Message: $message
+        ";
 
-        // Prepare SQL statement
-        $stmt = $conn->prepare("INSERT INTO contacts (name, email, subject, message) VALUES (:name, :email, :subject, :message)");
-        $stmt->bindParam(':name', $name);
-        $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':subject', $subject);
-        $stmt->bindParam(':message', $message);
+        // Set the "from" address
+        $headers = "From: abdumehammed@gmail.com\r\n"; // Ensure this matches the one you configured in sendmail.ini
+        $headers .= "Reply-To: $email\r\n";
 
-        // Execute the query
-        $stmt->execute();
+        // Send email to the user
+        if (mail($email, $email_subject, $email_body, $headers)) {
+            // Display success message
+            echo "Email successfully sent to $email!";
+        } else {
+            // Display error message if email not sent
+            echo "Sorry, there was an error sending your email. Please try again.";
+        }
 
-        // Success message
-        echo "<script>
-            document.getElementById('successMessage').style.display = 'block';
-        </script>";
+    } else {
+        // Display validation error
+        echo "Invalid input. Please ensure all fields are filled out correctly.";
     }
-} catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
 }
 ?>
