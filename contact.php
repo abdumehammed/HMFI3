@@ -248,7 +248,7 @@
                                                       <!-- Success/Error Message Display -->
                     <!-- Display Success or Error Messages Here -->
 <?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
-    <div class="alert alert-success">Your message has been sent successfully!</div>
+    <div class="alert alert-success">Thank you for Your feedback ,Your message has been sent successfully!</div>
 <?php elseif (isset($_GET['error']) && $_GET['error'] == 'true'): ?>
     <div class="alert alert-danger">There was an error sending your message. Please try again later.</div>
 <?php endif; ?>

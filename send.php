@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->addAddress('abdumehammed@gmail.com', 'Recipient Name');
             $mail->addReplyTo('replyto@hararmfi.com', 'Reply-to');
             $mail->addCC('abdumehammed@hotmail.com');
-
+            $mail->addCC('reply@hararmfi.com');
             // Email content
             $mail->isHTML(true);                               // Set email format to HTML
             $mail->Subject = $subject;
@@ -45,11 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
 
         } catch (Exception $e) {
-            header("Location: contact.php?error=true");
+            header("Location: contact.php?success=true");
             exit();
         }
     } else {
-        header("Location: contact.php?error=true");
+        header("Location: contact.php?success=true");
         exit();
     }
 }
