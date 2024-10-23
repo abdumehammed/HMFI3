@@ -152,7 +152,7 @@
                                     <a href="islamic.html" class="dropdown-item ">Islamic Products</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link  active">Contact Us</a>
+                            <a href="contact.php" class="nav-item nav-link  active">Contact Us</a>
                             
                         </div>
                     </div>
@@ -245,7 +245,13 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                         <div>
                             <h4 class="text-primary">Send Your Message</h4>
-                          
+                                                      <!-- Success/Error Message Display -->
+                    <!-- Display Success or Error Messages Here -->
+<?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
+    <div class="alert alert-success">Your message has been sent successfully!</div>
+<?php elseif (isset($_GET['error']) && $_GET['error'] == 'true'): ?>
+    <div class="alert alert-danger">There was an error sending your message. Please try again later.</div>
+<?php endif; ?>
                             <form id="contactForm" action="send.php" method="post" class="needs-validation" novalidate>
                                 <div class="row g-3">
                                     <!-- Name Field -->
@@ -253,7 +259,6 @@
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                             <label for="name">Your Name <span style="color:red">*</span></label>
-
                                             <div class="invalid-feedback">Please enter your name.</div>
                                         </div>
                                     </div>
@@ -284,12 +289,12 @@
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
                                     </div>
-                                    <!-- Success Message -->
-                                    <div class="col-12" id="successMessage" hidden>
-                                        <div class="alert alert-success">Your Message is Successfully Submitted! Thank you!</div>
-                                    </div>
                                 </div>
                             </form>
+                            
+
+
+                            
           
                             
                         </div>
