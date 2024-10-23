@@ -32,7 +32,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->addAddress('abdumehammed@gmail.com', 'Recipient Name');
             $mail->addReplyTo('replyto@hararmfi.com', 'Reply-to');
             $mail->addCC('abdumehammed@hotmail.com');
-            $mail->addCC('reply@hararmfi.com');
+            $mail->addCC('replyto@hararmfi.com');
+            $mail->addCC('eliyas.yalew@hararmfi.com');
+            $mail->addCC('yacobhabtu@hararmfi.com');
+            $mail->addCC('yaqob.habtu@hararmfi.com');
             // Email content
             $mail->isHTML(true);                               // Set email format to HTML
             $mail->Subject = $subject;
