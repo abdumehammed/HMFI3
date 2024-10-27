@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap Full-Width Carousel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,19 +10,20 @@
 
   <style>
     .carousel-inner > .item > img {
-      width: 100%;  /* Set the width to 100% */
-      height: auto; /* Maintain the aspect ratio */
+      width: 100%; /* Full width for all images */
+      height: auto; /* Adjust the height as needed */
+      object-fit: contain; /* Display the full image without cropping */
+      background-color: #000; /* Optional: Background color for contrast */
     }
     .carousel {
-      max-width: 100%; /* Limit the maximum width of the carousel */
-      overflow: hidden; /* Hide any overflow */
+      max-width: 100%; /* Full width */
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h2>Carousel Example</h2>  
+<div class="container-fluid"> <!-- Full-width container -->
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -34,13 +35,14 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="data1/images/aa.png" alt="Los Angeles" style="width:100%;">
+        <img src="data1/images/aa.png" alt="First Image">
       </div>
 
       <div class="item">
-        <img src="data1/images/aa.png" alt="Chicago" style="width:100%;">
+        <img src="data1/images/bb.png" alt="Second Image">
       </div>
-    
+
+   
     </div>
 
     <!-- Left and right controls -->
