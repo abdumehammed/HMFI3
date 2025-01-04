@@ -121,7 +121,7 @@
             <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
                 <!-- Logo and Institution Name aligned left -->
                 <a href="#" class="d-flex align-items-center">
-                    <img class="logo" src="img/logotrasparent.png" loading="lazy" alt="Logo" />
+                 <img class="logo" src="img/logotrasparent.png" loading="lazy" alt="Logo" />
 
                     <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
                         Harar Microfinance <br />
@@ -137,22 +137,41 @@
    
                 <!-- Navbar Links aligned to the right -->
                 <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products &
-                                Services</a>
-                            <div class="dropdown-menu">
-                                <a href="saving.html" class="dropdown-item">Saving Products</a>
-                                <a href="loan.html" class="dropdown-item">Loan Products</a>
-                                <a href="islamic.html" class="dropdown-item ">Islamic Products</a>
-                            </div>
-                        </div>
-                        <a href="contact.php" class="nav-item nav-link">Contact Us</a>
-   
-                    </div>
-                </div>
+                 <div class="navbar-nav ms-auto">
+                     <a href="index.html" class="nav-item nav-link  ">Home</a>
+                     <a href="about.html" class="nav-item nav-link active">About</a>
+                     <div class="nav-item dropdown">
+                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products &
+                             Services</a>
+                         <div class="dropdown-menu">
+                             <a href="saving.html" class="dropdown-item">Saving Products</a>
+                             <a href="loan.html" class="dropdown-item">Loan Products</a>
+                             <a href="islamic.html" class="dropdown-item ">Islamic Products</a>
+                         </div>
+                     </div>
+                     <a href="contact.php" class="nav-item nav-link">Contact Us</a>
+    
+              
+                     <div class="dropdown ms-3">
+                      <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                          <small> <span id="selected-lang">አማርኛ</span></small>
+                      </a>
+                      <div class="dropdown-menu rounded">
+                         
+                          <a href="/index.html" class="dropdown-item" onclick="changeLanguage('English')">English</a>
+                          <a href="/ao-et/index.html" class="dropdown-item" onclick="changeLanguage('Afaan Oromo')">Afaan Oromo</a>
+                          <a href="/hr-et/index.html" class="dropdown-item" onclick="changeLanguage('ሐረሪ ሲናን')">ሐረሪ ሲናን</a>
+                      </div>
+                  </div>
+                  <script>
+                      function changeLanguage(language) {
+                        
+                          document.getElementById('selected-lang').textContent = language;
+                      }
+                  </script>
+                  </a>
+                 </div>
+             </div>
             </nav>
         </div>
     </div>
