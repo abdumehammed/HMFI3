@@ -131,45 +131,6 @@
 
     <!-- Navbar & Hero Start -->
 
-    <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
-        <div class="container">
-            <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">
-                <!-- Logo and Institution Name aligned left -->
-                <a href="#" class="d-flex align-items-center">
-                    <img class="logo" src="img/logotrasparent.png" loading="lazy" alt="Harar Microfinance Institute Logo" />
-                    <h4 class="text-primary text-uppercase fw-bold px-lg-1 py-lg-1 mb-0 text-center ms-2">
-                        Harar Microfinance <br />
-                        Institution S.C.
-                    </h4>
-                </a>
-
-                <!-- Toggle button for mobile view -->
-                <button style="padding: 1px; border: none" class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-
-                <!-- Navbar Links aligned to the right -->
-                <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Products &
-                                Services</a>
-                            <div class="dropdown-menu">
-                                <a href="saving.html" class="dropdown-item">Saving Products</a>
-                                <a href="loan.html" class="dropdown-item">Loan Products</a>
-                                <a href="islamic.html" class="dropdown-item ">Islamic Products</a>
-                            </div>
-                        </div>
-                        <a href="contact.php" class="nav-item nav-link  active">Contact Us</a>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
 
     <!-- Navbar & Hero End -->
 
