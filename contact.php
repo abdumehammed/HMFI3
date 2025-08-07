@@ -94,6 +94,13 @@
                             <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
                                     class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
                         </div>
+
+                        <div class="ps-3">
+                            <a href="https://webmail.hararmfi.com/" target="_blank" title="Webmail">
+                                <img src="img/webmail_logo.png" alt="Webmail"
+                                    style="height:14px;vertical-align:middle;">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
