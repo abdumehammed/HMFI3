@@ -25,6 +25,8 @@
     </style>
     <meta charset="utf-8">
     <title>Harar Microfinance Institute S.C.</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -296,6 +298,7 @@
                                     </div>
                                 </div>
                                 <!-- Submit Button -->
+                                <div class="g-recaptcha" data-sitekey="6Leo1aErAAAAAFdN5fX61HFqF8tKBrlLV5j-7cP1"></div>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
                                 </div>
