@@ -25,15 +25,11 @@
     </style>
     <meta charset="utf-8">
     <title>Harar Microfinance Institute S.C.</title>
-    <!--
-        This script loads the reCAPTCHA API.
-        The 'async' and 'defer' attributes ensure the page loads quickly without blocking.
-    -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-        // This function is called automatically by reCAPTCHA upon successful completion.
         function enableSubmitBtn() {
             document.getElementById("mySubmitBtn").disabled = false;
+
         }
     </script>
 
@@ -91,22 +87,27 @@
                 <div class="col-lg-8 text-center text-start mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <div class="border-end border-primary pe-3">
-                            <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
+                            <a href="#" class="text-muted small"><i
+                                    class="fas fa-map-marker-alt text-primary me-2"></i>Ethiopia,Harar</a>
                         </div>
                         <div class="ps-3">
-                            <a href="tel:+251256663745" class="text-muted small"><i class="fas fa-fax text-primary me-2"></i>+251-256-663745</a>
+                            <a href="tel:+251256663745" class="text-muted small"><i
+                                    class="fas fa-fax text-primary me-2"></i>+251-256-663745</a>
                         </div>
                         <div class="ps-3">
-                            <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-phone-alt text-primary me-2"></i>025 666
+                            <a href="mailto:example@gmail.com" class="text-muted small"><i
+                                    class="fas fa-phone-alt text-primary me-2"></i>025 666
                                 3745 ,025 666 4078</a>
                         </div>
                         <div class="ps-3">
-                            <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
+                            <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
                         </div>
 
                         <div class="ps-3">
                             <a href="https://webmail.hararmfi.com/" target="_blank" title="Webmail">
-                                <img src="img/webmail_logo.png" alt="Webmail" style="height:14px;vertical-align:middle;">
+                                <img src="img/webmail_logo.png" alt="Webmail"
+                                    style="height:14px;vertical-align:middle;">
                             </a>
                         </div>
                     </div>
@@ -118,10 +119,10 @@
                             <a class="btn p-0 text-primary me-3" href="https://x.com/hararmfi/"><i class="fab fa-twitter"></i></a>
                             <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <!--                                 <div class="dropdown ms-3">
+                        <!--                           <div class="dropdown ms-3">
                                 <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
-                                        class="fas fa-globe-europe text-primary me-2"></i>
-                                    English</small></a>
+                                            class="fas fa-globe-europe text-primary me-2"></i>
+                                        English</small></a>
                                 <div class="dropdown-menu rounded">
                                     <a href="#" class="dropdown-item">English</a>
                                     <a href="#" class="dropdown-item">አማርኛ</a>
@@ -151,7 +152,8 @@
                 </a>
 
                 <!-- Toggle button for mobile view -->
-                <button style="padding: 1px; border: none" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button style="padding: 1px; border: none" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
 
@@ -302,15 +304,19 @@
                                         <div class="invalid-feedback">Please leave a message.</div>
                                     </div>
                                 </div>
-                                <!-- reCAPTCHA and Submit Button -->
-                                <div class="col-12">
-                                    <div class="g-recaptcha" data-sitekey="6Leo1aErAAAAAFdN5fX61HFqF8tKBrlLV5j-7cP1" data-callback="enableSubmitBtn"></div>
-                                </div>
+                                <!-- Submit Button -->
+                                <div class="g-recaptcha" data-sitekey="6Leo1aErAAAAAFdN5fX61HFqF8tKBrlLV5j-7cP1" data-callback="enableSubmitBtn"></div>
                                 <div class="col-12">
                                     <button type="submit" id="mySubmitBtn" class="btn btn-primary w-100 py-3" disabled="disabled">Send Message</button>
                                 </div>
                             </div>
                         </form>
+
+
+
+
+
+
                     </div>
                 </div>
                 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
@@ -334,7 +340,9 @@
             <div class="row g-5 ">
                 <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="rounded">
-                        <iframe class="rounded w-100 py-3 px-3" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.618406946123!2d42.12451493969717!3d9.312273015806987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bdb91ace6319%3A0x1ad25cb41c4e8ac6!2sOriental%20Studio%20harar!5e0!3m2!1sen!2set!4v1725891413837!5m2!1sen!2set" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="rounded w-100 py-3 px-3"
+                            style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.618406946123!2d42.12451493969717!3d9.312273015806987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bdb91ace6319%3A0x1ad25cb41c4e8ac6!2sOriental%20Studio%20harar!5e0!3m2!1sen!2set!4v1725891413837!5m2!1sen!2set"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -343,7 +351,8 @@
     <!-- Contact End -->
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-        <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="footer-item">
@@ -388,10 +397,13 @@
 
                             <div class="d-flex">
                                 <br />
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/people/Harar-MicroFinance-Institution/61565622741044/"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://x.com/hararmfi/"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://www.facebook.com/people/Harar-MicroFinance-Institution/61565622741044/"><i
+                                        class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="https://x.com/hararmfi/"><i
+                                        class="fab fa-twitter text-white"></i></a>
 
-                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i class="fab fa-linkedin-in text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="https://www.linkedin.com/in/harar-microfinance-institution-s-c-420141329/"><i
+                                        class="fab fa-linkedin-in text-white"></i></a>
                             </div>
                         </div>
 
