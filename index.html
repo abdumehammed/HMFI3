@@ -116,6 +116,49 @@
             margin-top: 10px;
         }
     </style>
+    <style>
+.simple-slider {
+  position: relative;
+  
+  margin: auto;
+  /* overflow: hidden; */
+  /* background: #000;  */
+  /* background behind images */
+}
+
+.simple-slider .slides img {
+  width: 100%;
+  max-height: 60vh;          /* fixed height */
+  /* object-fit: contain;  */
+     /* show whole image without cropping */
+  display: none;          /* hide all by default */
+}
+
+.simple-slider .slides img.active {
+  display: block;         /* only show the active one */
+}
+
+.simple-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.simple-slider .prev { left: 10px; }
+.simple-slider .next { right: 10px; }
+
+.simple-slider button:hover {
+  background: rgba(0,0,0,0.8);
+}
+</style>
 </head>
 
 <body>
@@ -281,23 +324,42 @@
 
 
     <!-- slider starts -->
-    <div id="wowslider-container1">
+    <!-- <div id="wowslider-container1">
         <div class="ws_images">
             <ul>
                 <li>
-                    <img src="/data1/images/aa.png" loading="lazy" alt="css image gallery" title="" />
+                    <img src="/data1/images/aa.png" loading="lazy" alt="css image gallery" title=""   object-fit="contain"  />
                 </li>
                 <li>
-                    <img src="/data1/images/bb.png" loading="lazy" alt="1" title="" id="wows1_1" />
+                    <img src="/data1/images/bb.png" loading="lazy" alt="1" title="" id="wows1_1"    object-fit="contain"/>
                 </li>
                 <li>
-                    <img src="/data1/images/cc.png" loading="lazy" alt="1" title="" id="wows1_1" />
+                    <img src="/data1/images/cc.png" loading="lazy" alt="1" title="" id="wows1_1"    object-fit="contain" />
                 </li>
             </ul>
         </div>
 
         <div class="ws_shadow"></div>
     </div>
+ -->
+
+
+    <!-- Simple Slider -->
+<div class="simple-slider">
+  <div class="slides">
+    <img src="/data1/images/aa.png" alt="Image 1" />
+    <img src="/data1/images/bb.png" alt="Image 2" />
+    <img src="/data1/images/cc.png" alt="Image 3" />
+  </div>
+
+  <!-- Navigation buttons -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+
+
+
     <!-- Feature Start -->
     <div class="container-fluid feature bg-light py-1">
         <div class="container py-1">
@@ -958,6 +1020,52 @@
             </div>
         </div>
     </div>
+    <script>
+const slides = document.querySelectorAll(".simple-slider .slides img");
+let index = 0;
+let autoSlide;
+
+// Show a slide by index
+function showSlide(i) {
+  slides.forEach((img, idx) => {
+    img.classList.toggle("active", idx === i);
+  });
+}
+
+// Next / Prev controls
+document.querySelector(".simple-slider .next").onclick = () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+  resetAutoSlide();
+};
+
+document.querySelector(".simple-slider .prev").onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+  resetAutoSlide();
+};
+
+// Auto-slide every 4 seconds
+function startAutoSlide() {
+  autoSlide = setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }, 4000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  startAutoSlide();
+}
+
+// Pause on hover
+document.querySelector(".simple-slider").addEventListener("mouseenter", () => clearInterval(autoSlide));
+document.querySelector(".simple-slider").addEventListener("mouseleave", startAutoSlide);
+
+// Init
+showSlide(index);
+startAutoSlide();
+</script>
     <script>
         // Modal handling
         const modal = document.getElementById("loanModal");

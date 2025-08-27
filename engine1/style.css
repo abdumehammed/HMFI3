@@ -66,6 +66,19 @@
 #wowslider-container1 img{
 	max-width: none !important;
 }
+
+
+
+/* Make slider images scale properly */
+#wowslider-container1 .ws_images img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important; /* show full image without cropping */
+}
+
+
+
+
 #wowslider-container1 .ws_images .ws_list img,
 #wowslider-container1 .ws_images > div > img{
 	width:100%;
@@ -466,7 +479,7 @@
 		display: block;
 	}
 }
-@media all and (max-width:400px){
+@media all and (max-width:1400px){
 	#wowslider-container1 .ws_controls,
 	#wowslider-container1 .ws_bullets,
 	#wowslider-container1 .ws_thumbs{
