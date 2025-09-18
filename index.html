@@ -117,48 +117,56 @@
         }
     </style>
     <style>
-.simple-slider {
-  position: relative;
-  
-  margin: auto;
-  /* overflow: hidden; */
-  /* background: #000;  */
-  /* background behind images */
-}
+        .simple-slider {
+            position: relative;
 
-.simple-slider .slides img {
-  width: 100%;
-  max-height: 60vh;          /* fixed height */
-  /* object-fit: contain;  */
-     /* show whole image without cropping */
-  display: none;          /* hide all by default */
-}
+            margin: auto;
+            /* overflow: hidden; */
+            /* background: #000;  */
+            /* background behind images */
+        }
 
-.simple-slider .slides img.active {
-  display: block;         /* only show the active one */
-}
+        .simple-slider .slides img {
+            width: 100%;
+            max-height: 60vh;
+            /* fixed height */
+            /* object-fit: contain;  */
+            /* show whole image without cropping */
+            display: none;
+            /* hide all by default */
+        }
 
-.simple-slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
+        .simple-slider .slides img.active {
+            display: block;
+            /* only show the active one */
+        }
 
-.simple-slider .prev { left: 10px; }
-.simple-slider .next { right: 10px; }
+        .simple-slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
 
-.simple-slider button:hover {
-  background: rgba(0,0,0,0.8);
-}
-</style>
+        .simple-slider .prev {
+            left: 10px;
+        }
+
+        .simple-slider .next {
+            right: 10px;
+        }
+
+        .simple-slider button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 
 <body>
@@ -216,12 +224,12 @@
                                 3745 ,025 666 4078</a>
                         </div>
                         <div class="ps-3">
-                            <a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
+                            <a href="mailto:ContactCenter@Hararmfi.com.et" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com.et</a>
                         </div>
 
                         <div class="ps-3">
-                            <a href="https://hararmfi.com:2096" target="_blank" title="Webmail">
+                            <a href="https://mail.ethionet.et/webmail/login/login.do" target="_blank" title="Webmail">
                                 <img src="img/webmail_logo.png" alt="Webmail"
                                     style="height:14px;vertical-align:middle;">
                             </a>
@@ -291,7 +299,7 @@
                         </div>
                         <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                         <button id="open-modal">Loan Calculator</button>
-<!-- 
+                        <!-- 
                         <div class="dropdown ms-3">
                             <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown">
                                 <small> <span id="selected-lang">English</span></small>
@@ -345,17 +353,17 @@
 
 
     <!-- Simple Slider -->
-<div class="simple-slider">
-  <div class="slides">
-    <img src="/data1/images/aa.webp" alt="Image 1" />
-    <img src="/data1/images/bb.webp" alt="Image 2" />
-    <img src="/data1/images/cc.webp" alt="Image 3" />
-  </div>
+    <div class="simple-slider">
+        <div class="slides">
+            <img src="/data1/images/aa.webp" alt="Image 1" />
+            <img src="/data1/images/bb.webp" alt="Image 2" />
+            <img src="/data1/images/cc.webp" alt="Image 3" />
+        </div>
 
-  <!-- Navigation buttons -->
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-</div>
+        <!-- Navigation buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
 
 
 
@@ -412,11 +420,11 @@
                             <i class="fa fa-bullseye fa-3x"></i>
                         </div>
                         <h5 class="mb-4">Flexible Plans</h5>
-    <p class="mb-3 text-justify">
-    We offer diversified financial plans tailored to our customers' needs.
-    As a trusted institution, we are committed to helping clients achieve
-    self-sustainability with solutions that adapt to their unique circumstances.
-</p>
+                        <p class="mb-3 text-justify">
+                            We offer diversified financial plans tailored to our customers' needs.
+                            As a trusted institution, we are committed to helping clients achieve
+                            self-sustainability with solutions that adapt to their unique circumstances.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
@@ -476,8 +484,8 @@
                         <div class="row g-4 justify-content-center">
                             <div class="col-12">
                                 <div class="rounded bg-light">
-                                    <img src="data1/images/hmfi_cover_page.webp" loading="lazy" class="img-fluid rounded w-100"
-                                        alt="cover image" />
+                                    <img src="data1/images/hmfi_cover_page.webp" loading="lazy"
+                                        class="img-fluid rounded w-100" alt="cover image" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -749,8 +757,9 @@
 
                                         <p>Email </p>
                                         <ul style="list-style: none;">
-                                            <li><a href="mailto:ContactCenter@Hararmfi.com" class="text-muted small"><i
-                                                        class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com</a>
+                                            <li><a href="mailto:ContactCenter@Hararmfi.com.et"
+                                                    class="text-muted small"><i
+                                                        class="fas fa-envelope text-primary me-2"></i>ContactCenter@Hararmfi.com.et</a>
                                             </li>
 
                                         </ul>
@@ -961,7 +970,7 @@
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
-                                <p class="text-white mb-0">ContactCenter@Hararmfi.com</p>
+                                <p class="text-white mb-0">ContactCenter@Hararmfi.com.et</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
@@ -1020,51 +1029,51 @@
         </div>
     </div>
     <script>
-const slides = document.querySelectorAll(".simple-slider .slides img");
-let index = 0;
-let autoSlide;
+        const slides = document.querySelectorAll(".simple-slider .slides img");
+        let index = 0;
+        let autoSlide;
 
-// Show a slide by index
-function showSlide(i) {
-  slides.forEach((img, idx) => {
-    img.classList.toggle("active", idx === i);
-  });
-}
+        // Show a slide by index
+        function showSlide(i) {
+            slides.forEach((img, idx) => {
+                img.classList.toggle("active", idx === i);
+            });
+        }
 
-// Next / Prev controls
-document.querySelector(".simple-slider .next").onclick = () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-  resetAutoSlide();
-};
+        // Next / Prev controls
+        document.querySelector(".simple-slider .next").onclick = () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+            resetAutoSlide();
+        };
 
-document.querySelector(".simple-slider .prev").onclick = () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
-  resetAutoSlide();
-};
+        document.querySelector(".simple-slider .prev").onclick = () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+            resetAutoSlide();
+        };
 
-// Auto-slide every 4 seconds
-function startAutoSlide() {
-  autoSlide = setInterval(() => {
-    index = (index + 1) % slides.length;
-    showSlide(index);
-  }, 4000);
-}
+        // Auto-slide every 4 seconds
+        function startAutoSlide() {
+            autoSlide = setInterval(() => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }, 4000);
+        }
 
-function resetAutoSlide() {
-  clearInterval(autoSlide);
-  startAutoSlide();
-}
+        function resetAutoSlide() {
+            clearInterval(autoSlide);
+            startAutoSlide();
+        }
 
-// Pause on hover
-document.querySelector(".simple-slider").addEventListener("mouseenter", () => clearInterval(autoSlide));
-document.querySelector(".simple-slider").addEventListener("mouseleave", startAutoSlide);
+        // Pause on hover
+        document.querySelector(".simple-slider").addEventListener("mouseenter", () => clearInterval(autoSlide));
+        document.querySelector(".simple-slider").addEventListener("mouseleave", startAutoSlide);
 
-// Init
-showSlide(index);
-startAutoSlide();
-</script>
+        // Init
+        showSlide(index);
+        startAutoSlide();
+    </script>
     <script>
         // Modal handling
         const modal = document.getElementById("loanModal");
