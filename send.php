@@ -23,20 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();                                   // Send using SMTP
             $mail->Host       = 'mail.hararmfi.com';           // Your cPanel SMTP server
             $mail->SMTPAuth   = true;                          // Enable SMTP authentication
-            $mail->Username   = 'abdumehammed@hararmfi.com';   // Your SMTP username
-            $mail->Password   = 'Higher#2234#';                // Your SMTP password
+            $mail->Username   = 'contactcenter@hararmfi.com.et';   // Your SMTP username
+            $mail->Password   = 'test@987';                // Your SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;   // Enable SSL encryption
             $mail->Port       = 465;                           // SMTP port for SSL
 
             // Recipients
-            $mail->setFrom('abdumehammed@hararmfi.com', 'Harar MFI');
+            $mail->setFrom('abdumehammed@hararmfi.com.et', 'Harar MFI');
             $mail->addAddress('abdumehammed@gmail.com', 'Recipient Name');
-            $mail->addReplyTo('replyto@hararmfi.com', 'Reply-to');
+            $mail->addReplyTo('contactcenter@hararmfi.com.et', 'Reply-to');
 
 
-            $mail->addCC('eliyas.yalew@hararmfi.com');
-            $mail->addCC('yacobhabtu@hararmfi.com');
-            $mail->addCC('yaqob.habtu@hararmfi.com');
+            //$mail->addCC('eliyas.yalew@hararmfi.com.et');
+            $mail->addCC('yaqob.habtu@hararmfi.com.et');
             // Email content
             $mail->isHTML(true);                               // Set email format to HTML
             $mail->Subject = $subject;
